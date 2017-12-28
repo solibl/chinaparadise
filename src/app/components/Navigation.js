@@ -11,7 +11,13 @@ class Navigation extends React.PureComponent {
 					<a href='#'>Menu</a>
 				</li>
 				<li>
-					<a href='#'>Location</a>
+					<a href='#'>Locations</a>
+				</li>
+				<li>
+					<a href='#'>Delivery</a>
+				</li>
+				<li>
+					<a href='#'>Catering</a>
 				</li>
 			</ul>
 		);
