@@ -7,7 +7,7 @@ class Homepage extends React.PureComponent {
 		return (
 			<div>
 				<Navigation />
-				<div className="container">
+				<div className="container" id="Main">
 					<div className="About">
 						<h1> About Us </h1>
 						<p> China Paradise Restaurant is a family	owned and operated restaurant established in Danville, CA since 1990. </p>
