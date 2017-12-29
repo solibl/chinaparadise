@@ -7,24 +7,3 @@
 .App-logo {
   width: 13%;
 }
-
-.Body-content {
-
-}
-
-.Navbar-links {
-  list-style-type: none;
-  list-style: none;
-  padding: 0;
-  padding-bottom: 2%;
-}
-
-.Navbar-links li{
-  display: inline;
-  padding: 2%;
-}
-
-.Navbar-links a{
-  text-decoration: none;
-  color: #000000;
-}

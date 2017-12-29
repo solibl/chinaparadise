@@ -10,7 +10,7 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -23,24 +23,41 @@
     <title>China Paradise Restaurant</title>
     <script>
       window.onscroll = function() {
-        growShrinkLogo()
+        growShrinkLogo();
       };
+      
+      var endOfDocumentTop = 40;
+      var size = 0;
 
       function growShrinkLogo() {
         var Logo = document.getElementById("Logo");
+        var Menu = document.getElementById('NavMenu');
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
-        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        if (size == 0 && scroll > endOfDocumentTop) {
+          Menu.style.position = 'fixed';
+          Menu.style.left = '0px';
+          Menu.style.top = '0px';
+          Menu.style.width = "100%";
+          Menu.style.zIndex = '-1';
           Logo.style.width = '5%';
-          Logo.style.position = 'relative';
-          Logo.style.left = '-45%';
-          Logo.style.top = '45px';
-        }else {
+          Logo.style.position = 'fixed';
+          Logo.style.left = '10%';
+          Logo.style.top = '1%';
+          Logo.style.zIndex = '1';
+          size = 1;
+        } else if(size == 1 && scroll <= endOfDocumentTop){
+          Menu.style.position = 'relative';
+          Menu.style.width = "100%";
+          Menu.style.height = "10%";
           Logo.style.width = '13%';
           Logo.style.position = 'relative';
           Logo.style.left = '0%';
           Logo.style.top = '0px';
+          size = 0;
         }
       }
+
     </script>
   </head>
   <body>
@@ -58,8 +75,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
   </body>
 </html>
