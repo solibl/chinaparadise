@@ -7,14 +7,14 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Arizonia|Josefin+Sans" rel="stylesheet">    
     <title>China Paradise Restaurant</title>
     <script>
       window.onscroll = function() {
         growShrinkLogo();
       };
       
-      var endOfDocumentTop = 140;
+      var endOfDocumentTop = 130;
       var size = 0;
 
       function growShrinkLogo() {
@@ -31,7 +31,7 @@
             Main.style.paddingTop ='13%';
             Menu.style.position = 'fixed';
             Menu.style.width = '100%';
-            Menu.style.height = '8%';
+            Menu.style.height = '60px';
             Menu.style.zIndex = '1';
             Menu.style.paddingTop = '5px';
             Logo.style.position = 'fixed';
@@ -44,9 +44,8 @@
             Main.style.paddingTop ='0';
             Menu.style.position = 'relative';
             Menu.style.width = "100%";
-            Menu.style.height = '8%';
             Menu.style.zIndex = '1';
-            Menu.style.paddingTop = '0';
+            Menu.style.paddingTop = '5px';
             Logo.style.position = 'relative';
             Logo.style.width = '13%';
             Logo.style.left = '0px';

@@ -9,11 +9,11 @@ class Homepage extends React.PureComponent {
 			<div>
 				<Navigation />
 				<div className="container" id="Main">
-					<div className="Video">
+					<div className="video-container">
 						<Video />
-						<p> We specialize in Schezwan and Hunan Cuisine</p>
+						<p> Specializing in Schezwan and Hunan Cuisine</p>
 					</div>
-					<div className="About">
+					<div className="about">
 						<h1> About Us </h1>
 						<p> China Paradise Restaurant is a family	owned and operated restaurant established in Danville, CA since 1990. </p>
 						<p> Our goal is to serve delicious Chinese dishes and to provide you with a great dining experience! It continues to be a pleasure serving you for 23 years and counting!</p>

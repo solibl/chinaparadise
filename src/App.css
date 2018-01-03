@@ -1,11 +1,15 @@
 .App-header {
-	text-align: center;
-	background-image: url("./app/images/background/banner.jpg");
-	background-size: 100%;
+    text-align: center;
+    background-image: url("./app/images/background/banner.jpg");
+    background-size: 100%;
 }
 
 .App-logo {
-  	width: 13%;
+    width: 13%;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .container {
@@ -26,5 +30,6 @@
 .navbar-nav li {
     float: none;
     display: inline-block;
-    padding-right: 20px; 
+    padding-right: 3.5%; 
+    font-size: 130%;
 }
