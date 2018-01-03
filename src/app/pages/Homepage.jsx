@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation.jsx';
 import './Homepage.css';
+import Video from '../components/Video.jsx';
 
 class Homepage extends React.PureComponent {
 	render () {
@@ -8,6 +9,10 @@ class Homepage extends React.PureComponent {
 			<div>
 				<Navigation />
 				<div className="container" id="Main">
+					<div className="Video">
+						<Video />
+						<p> We specialize in Schezwan and Hunan Cuisine</p>
+					</div>
 					<div className="About">
 						<h1> About Us </h1>
 						<p> China Paradise Restaurant is a family	owned and operated restaurant established in Danville, CA since 1990. </p>
@@ -15,7 +20,6 @@ class Homepage extends React.PureComponent {
 					</div>
 					<div>
 						<h1> Menu </h1>
-						<p> We specialize in Schezwan and Hunan Cuisine</p>
 						<button> See Our Menu </button>
 					</div>
 					<div>

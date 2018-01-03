@@ -24,8 +24,8 @@ class Navigation extends React.PureComponent {
 		          	</Navbar>
 	        	</div>
 	        </div>
-		);
-	}
+		)
+	};
 }
 
 export default Navigation;

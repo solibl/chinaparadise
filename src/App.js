@@ -12,8 +12,8 @@ class App extends Component {
           <Route exact path="/" component={Home}/>
         </div>
       </Router>
-    );
+    )
   }
-}
+};
 
 export default App;

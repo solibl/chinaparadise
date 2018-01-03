@@ -1,11 +1,16 @@
 .App-header {
 	text-align: center;
-	background-image: url("./app/images/background/test2.jpg");
+	background-image: url("./app/images/background/banner.jpg");
 	background-size: 100%;
 }
 
 .App-logo {
   	width: 13%;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
 }
 
 #NavMenu {
