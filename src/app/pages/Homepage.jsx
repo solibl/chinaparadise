@@ -1,14 +1,16 @@
 import React from 'react';
-import { Parallax, Background } from 'react-parallax';
-import { Carousel } from 'react-bootstrap'
-import './Homepage.css';
+import { Carousel, Button } from 'react-bootstrap'
 
+import './Homepage.css';
 import Navigation from '../components/Navigation.jsx';
 import Video from '../components/Video.jsx';
-import Danville_outside from '../images/restaurant/Danville_Restaurant.jpg'
-import Danville_inside from '../images/restaurant/Danville_Inside.jpg'
-import Dublin_outside from '../images/restaurant/Dublin_Restaurant.jpg'
-import Dublin_inside from '../images/restaurant/Dublin_Inside.jpg'
+import DanvilleMap from '../components/Danville_Map.jsx';
+import DanvilleOutside from '../images/restaurant/Danville_Restaurant.jpg';
+import DanvilleInside from '../images/restaurant/Danville_Inside.jpg';
+import DublinOutside from '../images/restaurant/Dublin_Restaurant.jpg';
+import DublinInside from '../images/restaurant/Dublin_Inside.jpg';
+import DublinMap from '../components/Dublin_Map.jsx';
+import Founded from '../components/Founded.jsx';
 
 class Homepage extends React.PureComponent {
 	render () {
@@ -23,20 +25,21 @@ class Homepage extends React.PureComponent {
 					<div className="about">
 						<h1> About Us </h1>
 						<p> China Paradise Restaurant is a family	owned and operated restaurant established in Danville, CA since 1990. </p>
-						<p> Our goal is to serve delicious Chinese dishes and to provide you with a great dining experience! It continues to be a pleasure serving you for 23 years and counting!</p>
+						<p> Our goal is to serve delicious Chinese dishes and to provide you with a great dining experience! </p>
+						<p> It continues to be a pleasure serving you for <Founded /> years and counting!</p>
 					</div>
-					<div>
+					<div className='menu'>
 						<h1> Menu </h1>
 						<button> See Our Menu </button>
 					</div>
-					<div>
+					<div className='location'>
 						<div className='carousel-container'>
-							<Carousel pauseOnHover={false}>
+							<Carousel className='carousel-fade' pauseOnHover={false}>
 							    <Carousel.Item>
-							    	<img src={Danville_outside} />
+							    	<img src={DanvilleOutside} alt='Danville Restaurant'/>
 							    </Carousel.Item>
 							    <Carousel.Item>
-							    	<img src={Danville_inside} />
+							    	<img src={DanvilleInside} alt='Inside Danville Restaurant'/>
 							    </Carousel.Item>
 							</Carousel>
 							<div className='carousel-container-text'>
@@ -45,16 +48,29 @@ class Homepage extends React.PureComponent {
 									<li>3446 Camino Tassajara</li>
 									<li>Danville, CA 94506</li>
 									<li>(925) 736-1221</li>
+									<ul className='hours'>
+									<li>Open Hours</li>
+									<li>Sunday - Thursday : 11:30 AM to 9:00 PM</li>
+									<li>Friday - Saturday : 11:30 AM to 9:30 PM</li>
+									</ul>
 								</ul>
+							</div>
+							<div className="Map">
+								<div className="map-container">
+									<DanvilleMap/>
+									<Button className="direction">
+									          <a href="https://www.google.com/maps/dir/?api=1&destination=China+Paradise+Restaurant/@37.7514806,-121.9707949,12z">See Directions</a>
+								    </Button>
+								</div>
 							</div>
 						</div>
 						<div className='carousel-container'>
-							<Carousel pauseOnHover={false}>
+							<Carousel className='carousel-fade' pauseOnHover={false}>
 							    <Carousel.Item>
-							    	<img src={Dublin_outside} />
+							    	<img src={DublinOutside} alt='Dublin Restaurant'/>
 							    </Carousel.Item>
 							    <Carousel.Item>
-							    	<img src={Dublin_inside} />
+							    	<img src={DublinInside} alt='Inside Dublin Restaurant'/>
 							    </Carousel.Item>
 							</Carousel>
 							<div className="carousel-container-text">
@@ -63,12 +79,29 @@ class Homepage extends React.PureComponent {
 									<li>4580 Dublin Boulevard</li>
 									<li>Dublin, CA 94568</li>
 									<li>(925) 556-9988</li>
+									<ul className='hours'>
+									<li>Open Hours</li>
+									<li>Sunday - Thursday : 11:30 AM to 9:00 PM</li>
+									<li>Friday - Saturday : 11:30 AM to 9:30 PM</li>
+									</ul>
 								</ul>
+							</div>
+							<div className="Map">
+								<div className="map-container">
+									<DublinMap/>
+									<Button className="direction">
+									          <a href="https://www.google.com/maps/dir/?api=1&destination=China+Paradise+Restaurant+Dublin/@37.7052134,-121.8817382,12z">See Directions</a>
+								    </Button>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div>
+					<div className='delivery'>
 						<h1> Delivery </h1>
+						<ul className='hours'>
+						<li>Delivery Hours</li>
+						<li>Monday - Sunday : 12:00 AM to 8:30 PM</li>
+						</ul>
 						<p> Each restaurant will be able to deliver to the listed areas </p>
 						<h2> Blackhawk </h2>
 							<ul>
@@ -84,7 +117,7 @@ class Homepage extends React.PureComponent {
 								<li>Pleasanton</li>
 							</ul>
 					</div>
-					<div>
+					<div className='catering'>
 						<h1> Catering </h1>
 						<p>We do businesses and special events catering</p>
 						<p>Let China Paradise cater your next event!</p>

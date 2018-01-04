@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem} from 'react-bootstrap'
 
@@ -11,7 +10,7 @@ class Navigation extends React.PureComponent {
 			<div className='App-header'>
 				<div>
 		            <header>
-		            <a href=''><img src={logo} className='App-logo' id='Logo'/></a>
+		            <a href=''><img src={logo} className='App-logo' id='Logo' alt='background banner'/></a>
 		          	</header>
 		          	<Navbar id='NavMenu' className="navbar-nav">
 		          		<Nav>

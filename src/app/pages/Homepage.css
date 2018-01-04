@@ -1,9 +1,13 @@
+/*About */
+
 .about {
 	margin-top: 1%;
+	width: 100%;
 }
 
 .about h1{
 	text-align: right;
+	padding-bottom: 2%;
 	padding-right: 15%;
 	font-size: 250%;
 }
@@ -13,6 +17,36 @@
 	font-size: 150%;
 }
 
+.about span{
+	font-style: bold;
+}
+
+/* Carousel */
+.carousel-fade .carousel-inner .item {
+	opacity: 0;
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
 
 .carousel {
 	max-height: 50%;
@@ -38,11 +72,61 @@
    display: none;
 }
 
+.delivery ul{
+	list-style-type: none;
+}
+
+.hours li{
+	font-size: 160%;
+}
 
 .right.carousel-control, .left.carousel-control {
     opacity: 0;
     filter:alpha(opacity=0); /* IE support */
 }
+/* Maps */
+.map-container {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.direction {
+	position: absolute;
+	display: inline-block;
+	top: 80%;
+	right: 43%;
+	z-index: 1;
+	width: 200px;
+}
+
+.direction a{
+	display: block;
+	width: 200px;
+	height: 25px;
+	padding-right: 20px;
+	font-size: 125%;
+	text-decoration: none;
+}
+
+/* Menu */
+
+.menu {
+	text-align: center;
+}
+
+.menu h1{
+	text-align: left;
+	padding-bottom: 2%;
+	padding-left: 15%;
+	font-size: 250%;
+}
+
+.menu p button{
+	font-size: 150%;
+}
+
+/* Video */
 
 .video {
 	opacity: 0.8;
@@ -58,7 +142,6 @@
 	display: inline-block;
 	top: 50%;
 	width: 100%;
-	height: 100%;
 	text-align: center;
 	font-size: 300%;
 	color: white;
