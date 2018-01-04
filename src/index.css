@@ -4,3 +4,13 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 150%;
 }
+h1 {
+	position: relative;
+	font-family: 'Arizonia', cursive;
+	font-size: 300%;
+
+}
+h1 span{
+	position: absolute; 
+	top: -200px;
+}

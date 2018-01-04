@@ -22,18 +22,27 @@ class Homepage extends React.PureComponent {
 						<Video />
 						<p> Specializing in Schezwan and Hunan Cuisine</p>
 					</div>
-					<div className="about">
-						<h1> About Us </h1>
+					<div className="about">					
+						<h1><span id='About'></span> About Us </h1>
 						<p> China Paradise Restaurant is a family	owned and operated restaurant established in Danville, CA since 1990. </p>
 						<p> Our goal is to serve delicious Chinese dishes and to provide you with a great dining experience! </p>
 						<p> It continues to be a pleasure serving you for <Founded /> years and counting!</p>
 					</div>
 					<div className='menu'>
-						<h1> Menu </h1>
-						<button> See Our Menu </button>
+						<h1><span id='Menu'></span> Menu </h1>
+						<p>Food is made when ordered</p>
+						<p>Our food is contains no MSG</p>
+						<p>We can accommodate to any preferences upon request such as:</p>
+							<ul>
+								<li>Low Oil</li>
+								<li>Low Sodium</li>
+								<li>Gluten Free</li>
+							</ul>
+						<Button> View Our Menu </Button>
 					</div>
 					<div className='location'>
 						<div className='carousel-container'>
+							<span id='Location'></span>
 							<Carousel className='carousel-fade' pauseOnHover={false}>
 							    <Carousel.Item>
 							    	<img src={DanvilleOutside} alt='Danville Restaurant'/>
@@ -97,13 +106,14 @@ class Homepage extends React.PureComponent {
 						</div>
 					</div>
 					<div className='delivery'>
-						<h1> Delivery </h1>
+						<h1><span id='Delivery'></span> Delivery </h1>
 						<ul className='hours'>
-						<li>Delivery Hours</li>
+						<li>Hours We Deliver</li>
 						<li>Monday - Sunday : 12:00 AM to 8:30 PM</li>
 						</ul>
 						<p> Each restaurant will be able to deliver to the listed areas </p>
-						<h2> Blackhawk </h2>
+						<div className='delivery-locations'>
+						<h1> Blackhawk </h1>
 							<ul>
 								<li>Alamo</li>
 								<li>BlackHawk</li>
@@ -111,14 +121,17 @@ class Homepage extends React.PureComponent {
 								<li>San Ramon</li>
 
 							</ul>
-						<h2> Dublin </h2>
+						</div>
+						<div className='delivery-locations'>
+						<h1> Dublin </h1>
 							<ul>
 								<li>Dublin</li>
 								<li>Pleasanton</li>
 							</ul>
+						</div>
 					</div>
 					<div className='catering'>
-						<h1> Catering </h1>
+						<h1><span id='Catering'></span> Catering </h1>
 						<p>We do businesses and special events catering</p>
 						<p>Let China Paradise cater your next event!</p>
 						<p></p>
