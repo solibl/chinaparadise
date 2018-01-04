@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem} from 'react-bootstrap'
 
 import logo from '../images/logo/CPRlogo.png';
@@ -11,15 +9,15 @@ class Navigation extends React.PureComponent {
 			<div className='App-header'>
 				<div>
 		            <header>
-		            <a href=''><img src={logo} className='App-logo' id='Logo'/></a>
+		            <a href='/'><img src={logo} className='App-logo' id='Logo' alt='background banner'/></a>
 		          	</header>
-		          	<Navbar id='NavMenu' className="navbar-nav">
+		          	<Navbar id='NavMenu' className='navbar-nav'>
 		          		<Nav>
-		          			<NavItem> About Us </NavItem>
-		          			<NavItem> Menu </NavItem>
-		          			<NavItem> Locations </NavItem>
-		          			<NavItem> Delivery </NavItem>
-		          			<NavItem> Catering </NavItem>
+		          			<NavItem href='/#About'> About Us </NavItem>
+		          			<NavItem href='/#Menu'> Menu </NavItem>
+		          			<NavItem href='/#Location'> Locations </NavItem>
+		          			<NavItem href='/#Delivery'> Delivery </NavItem>
+		          			<NavItem href='/#Catering'> Catering </NavItem>
 		          		</Nav>
 		          	</Navbar>
 	        	</div>
