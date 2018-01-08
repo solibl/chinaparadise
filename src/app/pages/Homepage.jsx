@@ -30,9 +30,9 @@ class Homepage extends React.PureComponent {
 					</div>
 					<div className='menu'>
 						<h1><span id='Menu'></span> Menu </h1>
-						<p>Food is made when ordered</p>
-						<p>Our food is contains no MSG</p>
-						<p>We can accommodate to any preferences upon request such as:</p>
+						<p>Food is made by the order</p>
+						<p>Our food contains no MSG</p>
+						<p>We can accommodate based on dietery needs upon request such as:</p>
 							<ul>
 								<li>Low Oil</li>
 								<li>Low Sodium</li>
@@ -119,22 +119,20 @@ class Homepage extends React.PureComponent {
 								<li>BlackHawk</li>
 								<li>Danville</li>
 								<li>San Ramon</li>
-
-							</ul>
+								</ul>
 						</div>
-						<div className='delivery-locations'>
-						<h1> Dublin </h1>
-							<ul>
-								<li>Dublin</li>
-								<li>Pleasanton</li>
-							</ul>
+							<div className='delivery-locations'>
+							<h1> Dublin </h1>
+								<ul>
+									<li>Dublin</li>
+									<li>Pleasanton</li>
+								</ul>
 						</div>
 					</div>
 					<div className='catering'>
 						<h1><span id='Catering'></span> Catering </h1>
 						<p>We do businesses and special events catering</p>
 						<p>Let China Paradise cater your next event!</p>
-						<p></p>
 					</div>
 				</div>
 			</div>
