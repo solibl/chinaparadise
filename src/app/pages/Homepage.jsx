@@ -38,7 +38,7 @@ class Homepage extends React.PureComponent {
 								<li>Low Sodium</li>
 								<li>Gluten Free</li>
 							</ul>
-						<Button> View Our Menu </Button>
+						<Button className='menu-link' href="/menu">View Our Menu </Button>
 					</div>
 					<div className='location'>
 						<div className='carousel-container'>
