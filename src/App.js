@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './app/pages/Homepage.jsx';
 import Menu from './app/pages/Menu.jsx';
 import Login from './app/pages/Login.jsx';
+import Admin from './app/pages/Admin.jsx';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
           <Route exact path='/' component={Home}/>
           <Route exact path='/menu' component={Menu}/>
           <Route exact path='/login' component={Login}/>
+          <Route exact path='/admin' component={Admin}/>
         </div>
       </Router>
     )

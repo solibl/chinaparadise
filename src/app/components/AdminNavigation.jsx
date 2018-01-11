@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavItem} from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, NavItem, MenuItem} from 'react-bootstrap';
 
 import './Navigation.css';
 
@@ -20,6 +20,11 @@ class Navigation extends React.PureComponent {
 		          			<NavItem eventKey={3} href='/#Location'> Locations </NavItem>
 		          			<NavItem eventKey={4} href='/#Delivery'> Delivery </NavItem>
 		          			<NavItem eventKey={5} href='/#Catering'> Catering </NavItem>
+		          			<NavDropdown eventKey={6} title='Admin' id="basic-nav-dropdown">
+		          				<MenuItem eventKey={6.1}> Edit Menus </MenuItem>
+		          				<MenuItem eventKey={6.1}> Change Password </MenuItem>
+		          				<MenuItem eventKey={6.1}> Logout </MenuItem>
+		          			</NavDropdown>
 		          		</Nav>
 		          	</Navbar>
 	        	</div>
