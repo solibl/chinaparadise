@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+import { Redirect } from 'react-router';
+import './MenuForm.css';
 
 import AuthService from '../components/AuthService.jsx';
 const Auth = new AuthService();
@@ -11,9 +13,16 @@ class MenuForm extends React.PureComponent {
 		this.handleChange = this.handleChange.bind(this);
 		this.handleFormSubmit = this.handleFormSubmit.bind(this);
   		this.state = {
-  			category: 1
+  			category: 1,
+  			results: []
   		}
 	};
+
+	componentWillMount() {
+    	if (!Auth.loggedIn()) {
+        this.props.history.replace('/login')
+    	}
+    };
 
 	handleChange(e) {
 		this.setState(
@@ -48,14 +57,22 @@ class MenuForm extends React.PureComponent {
 			    {headers}
 			    )
 			  .then(response => {
-			  	console.log(response)
+				window.location = '/admin';
 			  })
-			  .catch(error => console.log(error))
+			  .catch(error => console.log(error)
+		);
+
+		this.setState(
+			{
+				showMe:false
+			}
+		);
     };
 
 	render () {
 		return (
-			<div>
+			<div className='menu-form-container'>
+			<h1>New Menu Item</h1>
 				<form onSubmit={this.handleFormSubmit}>
 					<input 
 						className='input' 
@@ -77,7 +94,7 @@ class MenuForm extends React.PureComponent {
 	        			placeholder='Price:' 
 	        			onChange={this.handleChange}
 	        		/>
-		          	<select name="category" value={this.state.value} onChange={this.handleChange}>
+		          	<select className='input' name="category" value={this.state.value} onChange={this.handleChange}>
 			            <option value="1">Appetizers</option>
 			            <option value="2">Soup</option>
 			            <option value="3">Pork</option>
