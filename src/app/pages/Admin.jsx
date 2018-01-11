@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Navigation from '../components/AdminNavigation.jsx'
-import AuthService from '../components/AuthService'
+import Navigation from '../components/AdminNavigation.jsx';
+import AuthService from '../components/AuthService';
 const Auth = new AuthService();
 
 class Admin extends React.PureComponent {

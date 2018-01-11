@@ -2,8 +2,9 @@ import React from 'react';
 
 import './Login.css';
 
-import Navigation from '../components/Navigation.jsx'
-import AuthService from '../components/AuthService'
+import Navigation from '../components/Navigation.jsx';
+import AuthService from '../components/AuthService.jsx';
+import Footer from '../components/Footer.jsx';
 
 class Login extends React.PureComponent {
 	
@@ -30,11 +31,11 @@ class Login extends React.PureComponent {
 	handleFormSubmit(e){
         e.preventDefault();
         this.Auth.login(this.state.email,this.state.password)
-            .then(res =>{
+            .then(response =>{
                this.props.history.replace('/admin');
             })
-            .catch(err =>{
-                alert(err);
+            .catch(error =>{
+                alert(error);
             })
     };
 
@@ -67,6 +68,7 @@ class Login extends React.PureComponent {
 						</form>
 					</div>
 				</div>
+				<Footer />
 			</div>
 		)
 	};

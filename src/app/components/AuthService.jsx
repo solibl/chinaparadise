@@ -14,9 +14,9 @@ export default class AuthService {
                 email,
                 password
             })
-        }).then(res => {
-            this.setToken(res.token) // Setting the token in localStorage
-            return Promise.resolve(res);
+        }).then(response => {
+            this.setToken(response.auth_token) // Setting the token in localStorage
+            return Promise.resolve(response);
         })
     }
 
@@ -28,17 +28,17 @@ export default class AuthService {
 
     setToken(idToken) {
         // Saves user token to localStorage
-        localStorage.setItem('id_token', idToken)
+        localStorage.setItem('Authorization', idToken)
     }
 
     getToken() {
         // Retrieves the user token from localStorage
-        return localStorage.getItem('id_token')
+        return localStorage.getItem('Authorization')
     }
 
     logout() {
         // Clear user token and profile data from localStorage
-        localStorage.removeItem('id_token');
+        localStorage.removeItem('Authorization');
     }
 
 
@@ -47,14 +47,12 @@ export default class AuthService {
         const headers = {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
-        }
-
+        };
         // Setting Authorization header
         // Authorization: Bearer xxxxxxx.xxxxxxxx.xxxxxx
         if (this.loggedIn()) {
             headers['Authorization'] = 'Bearer ' + this.getToken()
-        }
-
+        };
         return fetch(url, {
             headers,
             ...options

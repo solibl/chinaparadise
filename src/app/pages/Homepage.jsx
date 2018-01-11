@@ -11,6 +11,7 @@ import DublinOutside from '../images/restaurant/Dublin_Restaurant.jpg';
 import DublinInside from '../images/restaurant/Dublin_Inside.jpg';
 import DublinMap from '../components/Dublin_Map.jsx';
 import Founded from '../components/Founded.jsx';
+import Footer from '../components/Footer.jsx';
 
 class Homepage extends React.PureComponent {
 	render () {
@@ -40,7 +41,7 @@ class Homepage extends React.PureComponent {
 							</ul>
 						<Button className='menu-link' href="/menu">View Our Menu </Button>
 					</div>
-					<div className='location'>
+					<div className='location' id='Blackhawk'>
 						<div className='carousel-container'>
 							<span id='Location'></span>
 							<Carousel className='carousel-fade' pauseOnHover={false}>
@@ -57,10 +58,14 @@ class Homepage extends React.PureComponent {
 									<li>3446 Camino Tassajara</li>
 									<li>Danville, CA 94506</li>
 									<li>(925) 736-1221</li>
+									<li style={{textDecoration:"underline"}}>Open Hours</li>
 									<ul className='hours'>
-									<li>Open Hours</li>
-									<li>Sunday - Thursday : 11:30 AM to 9:00 PM</li>
-									<li>Friday - Saturday : 11:30 AM to 9:30 PM</li>
+										<li>Sunday - Thursday</li>
+										<li>11:30 AM to 3:00 PM</li>
+										<li>4:30 PM - 9:00 PM</li>
+										<li>Friday - Saturday</li>
+										<li>11:30 AM to 3:00 PM</li>
+										<li>4:30 PM - 9:00 PM</li>									
 									</ul>
 								</ul>
 							</div>
@@ -73,7 +78,7 @@ class Homepage extends React.PureComponent {
 								</div>
 							</div>
 						</div>
-						<div className='carousel-container'>
+						<div className='carousel-container' id='Dublin'>
 							<Carousel className='carousel-fade' pauseOnHover={false}>
 							    <Carousel.Item>
 							    	<img src={DublinOutside} alt='Dublin Restaurant'/>
@@ -88,10 +93,15 @@ class Homepage extends React.PureComponent {
 									<li>4580 Dublin Boulevard</li>
 									<li>Dublin, CA 94568</li>
 									<li>(925) 556-9988</li>
+									<li style={{textDecoration:"underline"}}>Open Hours</li>					
 									<ul className='hours'>
-									<li>Open Hours</li>
-									<li>Sunday - Thursday : 11:30 AM to 9:00 PM</li>
-									<li>Friday - Saturday : 11:30 AM to 9:30 PM</li>
+										<li>Sunday - Thursday</li>
+										<li>11:30 AM to 3:00 PM</li>
+										<li>4:00 PM - 9:00 PM</li>
+										<li> </li>
+										<li>Friday - Saturday</li>
+										<li>11:30 AM to 3:00 PM</li>
+										<li>4:00 PM - 9:00 PM</li>									
 									</ul>
 								</ul>
 							</div>
@@ -107,22 +117,28 @@ class Homepage extends React.PureComponent {
 					</div>
 					<div className='delivery'>
 						<h1><span id='Delivery'></span> Delivery </h1>
-						<ul className='hours'>
-						<li>Hours We Deliver</li>
-						<li>Monday - Sunday : 12:00 AM to 8:30 PM</li>
-						</ul>
 						<p> Each restaurant will be able to deliver to the listed areas </p>
 						<div className='delivery-locations'>
 						<h1> Blackhawk </h1>
+							<ul className='delivery-hours'>
+								<li>Hours We Deliver</li>
+								<li>11:30 AM to 3:00 PM</li>
+								<li>4:30 PM - 8:30 PM</li>								
+							</ul>
 							<ul>
 								<li>Alamo</li>
 								<li>BlackHawk</li>
 								<li>Danville</li>
 								<li>San Ramon</li>
-								</ul>
+							</ul>
 						</div>
 							<div className='delivery-locations'>
 							<h1> Dublin </h1>
+								<ul className='delivery-hours'>
+									<li>Hours We Deliver</li>
+									<li>11:30 AM to 3:00 PM</li>
+									<li>4:00 PM - 8:30 PM</li>
+								</ul>
 								<ul>
 									<li>Dublin</li>
 									<li>Pleasanton</li>
@@ -134,7 +150,14 @@ class Homepage extends React.PureComponent {
 						<p>We do businesses and special events catering</p>
 						<p>Let China Paradise cater your next event!</p>
 					</div>
+					<div className='policy'>
+						<h1><span id='Policy'></span> Policies </h1>
+						<p>Refund: </p>
+						<p>Prices and food menu are subject to change without notice.</p>
+						<p>Corkage fee: $10.00 per bottle</p>
+					</div>
 				</div>
+				<Footer />
 			</div>
 		)
 	};
