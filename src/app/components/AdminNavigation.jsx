@@ -4,8 +4,15 @@ import { Navbar, Nav, NavDropdown, NavItem, MenuItem} from 'react-bootstrap';
 import './Navigation.css';
 
 import logo from '../images/logo/CPRlogo.png';
+import AuthService from './AuthService';
+const Auth = new AuthService();
 
 class Navigation extends React.PureComponent {
+
+	handleLogout() {
+	    Auth.logout();
+ 	};
+
 	render () {
 		return (
 			<div className='App-header'>
@@ -23,7 +30,7 @@ class Navigation extends React.PureComponent {
 		          			<NavDropdown eventKey={6} title='Admin' id="basic-nav-dropdown">
 		          				<MenuItem eventKey={6.1}> Edit Menus </MenuItem>
 		          				<MenuItem eventKey={6.1}> Change Password </MenuItem>
-		          				<MenuItem eventKey={6.1}> Logout </MenuItem>
+		          				<MenuItem eventKey={6.1} onClick={this.handleLogout} href='/login'> Logout </MenuItem>
 		          			</NavDropdown>
 		          		</Nav>
 		          	</Navbar>

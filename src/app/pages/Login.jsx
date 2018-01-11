@@ -31,7 +31,7 @@ class Login extends React.PureComponent {
         e.preventDefault();
         this.Auth.login(this.state.email,this.state.password)
             .then(res =>{
-               this.props.history.replace('/');
+               this.props.history.replace('/admin');
             })
             .catch(err =>{
                 alert(err);
@@ -61,7 +61,7 @@ class Login extends React.PureComponent {
 							/>
 							<input
 								className="form-submit"
-								value="SUBMIT"
+								value="Submit"
 								type="submit"
 							/>
 						</form>
