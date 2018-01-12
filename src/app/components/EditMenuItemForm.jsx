@@ -1,28 +1,22 @@
 import React from 'react';
 import axios from 'axios';
-
-import './MenuForm.css';
-
 import AuthService from '../components/AuthService.jsx';
-const Auth = new AuthService();
 
-class MenuForm extends React.PureComponent {
+const Auth = new AuthService();
+class EditMenuItemForm extends React.PureComponent {
 	
 	constructor(props) {
-  		super(props);
+		super(props)
 		this.handleChange = this.handleChange.bind(this);
-		this.handleFormSubmit = this.handleFormSubmit.bind(this);
-  		this.state = {
-  			category: 1
-  		}
-	};
-
-	componentWillMount() {
-    	if (!Auth.loggedIn()) {
-        this.props.history.replace('/login')
-    	}
-    };
-
+		this.handleBlur = this.handleBlur.bind(this);
+		this.state = {
+			id: this.props.menu.id,
+			name: this.props.menu.name,
+			ingredients: this.props.menu.ingredients,
+			price: this.props.menu.price,
+			category: this.props.menu.category
+		}
+	}
 	handleChange(e) {
 		this.setState(
 			{
@@ -31,9 +25,7 @@ class MenuForm extends React.PureComponent {
 		);
 	};
 
-	handleFormSubmit(e){
-        e.preventDefault();
-        
+	handleBlur() {
         const headers = {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -42,9 +34,9 @@ class MenuForm extends React.PureComponent {
         if (Auth.loggedIn()) {
             headers['Authorization'] = 'Bearer ' + Auth.getToken()
         };
-
-		axios.post(
-			    'http://localhost:3001/api/v1/menus',
+        const url = 'http://localhost:3001/api/v1/menus/' + this.state.id;
+		axios.put(
+			    url,
 			    { menu: 
 			    	{
 		    		name: this.state.name,
@@ -56,44 +48,40 @@ class MenuForm extends React.PureComponent {
 			    {headers}
 			    )
 			  .then(response => {
-				window.location = '/admin';
+				window.location = '/admin/edit';
 			  })
 			  .catch(error => console.log(error)
 		);
-
-		this.setState(
-			{
-				showMe:false
-			}
-		);
-    };
+	}
 
 	render () {
 		return (
-			<div className='menu-form-container'>
-			<h1>New Menu Item</h1>
-				<form onSubmit={this.handleFormSubmit}>
-					<input 
+			<div>
+			<form onBlur={this.handleBlur}>
+					<p>Name:</p><input 
 						className='input' 
 						type="text"
 	        			name="name" 
 	        			placeholder='Name:'
+	        			value={this.state.name}
 	        			onChange={this.handleChange} 
 	        		/>
-	          		<textarea 
+	          		<p>Ingredients:</p><textarea 
 	          			className='input' 
 	          			name="ingredients"
 	            		placeholder='Ingredients:'
+	        			value={this.state.ingredients}
 	            		onChange={this.handleChange}>
 	            	</textarea>
-					<input 
+					<p>Price:</p><input 
 						className='input' 
 						type="text"
 	        			name="price" 
 	        			placeholder='Price:' 
+	        			value={this.state.price}
 	        			onChange={this.handleChange}
 	        		/>
-		          	<select className='input' name="category" value={this.state.value} onChange={this.handleChange}>
+		          	<p>Category:</p><select className='input' name="category" value={this.state.category} onChange={this.handleChange}>
 			            <option value="1">Appetizers</option>
 			            <option value="2">Soup</option>
 			            <option value="3">Pork</option>
@@ -106,15 +94,10 @@ class MenuForm extends React.PureComponent {
 			            <option value="10">Rice</option>
 			            <option value="11">Noodles</option>
 		        	</select>
-					<input
-						className="form-submit"
-						value="Submit"
-						type="submit"
-					/>
 				</form>
 			</div>
 		)
-	};
+	}
 }
 
-export default MenuForm;
+export default EditMenuItemForm;

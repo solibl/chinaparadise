@@ -6,6 +6,10 @@
     border: 1px solid grey;
 }
 
+.input:focus {
+  border: solid 1px lightgrey;
+}
+
 .new-menu-container {
 	margin-top: 120px;
 	width: 100%;

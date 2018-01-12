@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { Grid, Row, Col } from 'react-bootstrap';
+
 import './Menu.css';
 
 import Navigation from '../components/Navigation.jsx';
@@ -246,7 +247,9 @@ class Menu extends React.PureComponent {
 		return (
 			<div>
 			<Navigation />
+				<div id='Main'>
 				{menuItems}
+				</div>
 			<Footer />
 			</div>
 		)
