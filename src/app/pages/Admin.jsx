@@ -46,6 +46,7 @@ class Admin extends React.PureComponent {
 						</Button>
 						</div>
 		}
+		
 		return (
 			<div>
 				<Navigation />

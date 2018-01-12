@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { Redirect } from 'react-router';
+
 import './MenuForm.css';
 
 import AuthService from '../components/AuthService.jsx';
@@ -89,7 +89,7 @@ class MenuForm extends React.PureComponent {
 	            	</textarea>
 					<input 
 						className='input' 
-						type="decimal"
+						type="text"
 	        			name="price" 
 	        			placeholder='Price:' 
 	        			onChange={this.handleChange}
