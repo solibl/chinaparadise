@@ -21,7 +21,7 @@ class Homepage extends React.PureComponent {
 				<div className="container" id="Main">
 					<div className="video-container">
 						<Video />
-						<p> Specializing in Schezwan and Hunan Cuisine</p>
+						<p> Specializing in Szechwan and Hunan Cuisine</p>
 					</div>
 					<div className="about">					
 						<h1><span id='About'></span> About Us </h1>
@@ -152,8 +152,13 @@ class Homepage extends React.PureComponent {
 					</div>
 					<div className='policy'>
 						<h1><span id='Policy'></span> Policies </h1>
-						<p>Refund: </p>
+						<h4 style={{textDecoration:'underline'}}>Refund</h4>
+						<ul> 
+							<li>Must inform us within 24 hours</li>
+							<li>The order in question must be brought back with at least 80% of it's original content</li>
+						</ul>
 						<p>Prices and food menu are subject to change without notice.</p>
+						<p>We do not accept checks</p>
 						<p>Corkage fee: $10.00 per bottle</p>
 					</div>
 				</div>

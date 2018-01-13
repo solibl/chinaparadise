@@ -16,7 +16,10 @@ class Navigation extends React.PureComponent {
 		          	<Navbar id='NavMenu' className='navbar-nav'>
 		          		<Nav>
 		          			<NavItem href='/#About'> About Us </NavItem>
-		          			<NavItem href='/menu'> Menu </NavItem>
+		          			<NavDropdown title='Menu' id="basic-nav-dropdown">
+		          				<MenuItem href='/specials'> Specials </MenuItem>
+		          				<MenuItem href='/menu'> Menu </MenuItem>
+		          			</NavDropdown>
 		          			<NavDropdown title='Locations' id="basic-nav-dropdown">
 		          				<MenuItem href='/#Blackhawk'> Blackhawk </MenuItem>
 		          				<MenuItem href='/#Dublin'> Dublin </MenuItem>

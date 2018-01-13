@@ -6,6 +6,7 @@ import Menu from './app/pages/Menu.jsx';
 import Login from './app/pages/Login.jsx';
 import Admin from './app/pages/Admin.jsx';
 import EditMenu from './app/pages/Edit.jsx';
+import Specials from './app/pages/Specials.jsx';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
           <Route exact path='/login' component={Login}/>
           <Route exact path='/admin' component={Admin}/>
           <Route exact path='/admin/edit' component={EditMenu}/>
+          <Route exact path='/specials' component={Specials}/>          
         </div>
       </Router>
     )
