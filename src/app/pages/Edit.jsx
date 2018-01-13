@@ -4,7 +4,7 @@ import { Grid, Row, Col } from 'react-bootstrap';
 
 import './Edit.css';
 
-import Navigation from '../components/Navigation.jsx';
+import AdminNavigation from '../components/AdminNavigation.jsx';
 import Footer from '../components/Footer.jsx';
 import LoadingImage from '../images/background/wokloadingscreen.gif';
 import EditMenuItemForm from '../components/EditMenuItemForm.jsx';
@@ -212,7 +212,7 @@ class EditMenu extends React.PureComponent {
 		}
 		return (
 			<div>
-			<Navigation />
+			<AdminNavigation />
 				<div id='Main'>
 				{menuItems}
 				</div>
