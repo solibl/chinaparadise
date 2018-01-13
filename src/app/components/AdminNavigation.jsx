@@ -1,11 +1,18 @@
 import React from 'react';
-import { NavDropdown, Navbar, Nav, NavItem, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, NavItem, MenuItem} from 'react-bootstrap';
 
 import './Navigation.css';
 
 import logo from '../images/logo/CPRlogo.png';
+import AuthService from './AuthService';
+const Auth = new AuthService();
 
 class Navigation extends React.PureComponent {
+
+	handleLogout() {
+	    Auth.logout();
+ 	};
+
 	render () {
 		return (
 			<div className='App-header'>
@@ -27,6 +34,12 @@ class Navigation extends React.PureComponent {
 		          			<NavItem href='/#Delivery'> Delivery </NavItem>
 		          			<NavItem href='/#Catering'> Catering </NavItem>
 		          			<NavItem href='/#Policy'> Policies </NavItem>
+		          			<NavDropdown title='Admin' id="basic-nav-dropdown">
+		          				<MenuItem href='/admin'> Add New Menu Item </MenuItem>
+		          				<MenuItem href='/admin/edit'> Edit Menu Items</MenuItem>
+		          				<MenuItem> Change Password </MenuItem>
+		          				<MenuItem onClick={this.handleLogout} href='/login'> Logout </MenuItem>
+		          			</NavDropdown>
 		          		</Nav>
 		          	</Navbar>
 	        	</div>

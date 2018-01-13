@@ -1,0 +1,121 @@
+.page-title {
+	font-size: 400%;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.specials-container {
+	margin-top: 7%;
+	margin-bottom: 7%;
+	width: 100%;
+	text-align: center;
+}
+
+/* Lunch Specials */
+.lunch-special-item:hover {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #e6e6e6;
+	border-radius: 15px;
+}
+
+.wrap {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: 100%;
+	display: table;
+	text-align: center;
+}
+
+.wrap:hover {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #e6e6e6;
+	border-radius: 15px;
+}
+
+.wrap h3 {
+	width: 45%;
+	padding-top: 1%;
+	display: table-cell;
+}
+
+.wrap-column {
+	width: 100%;
+	display: table;
+}
+
+.wrap-column p{
+	width: 33%;
+	display: table-cell;
+	text-align: center;
+}
+
+.wrap-cell {
+	width: 100%;
+	display: table;
+}
+
+.wrap-cell p{
+	width: 33%;
+	display: table-cell;
+	text-align: center;
+}
+/* Family Dinner */
+
+.align-text-left {
+	text-align: left;
+	margin-left: 15%;
+}
+
+.align-text-right {
+	text-align: right;
+	margin-right: 15%;
+}
+
+.category-title-right {
+	text-align: right;
+	margin-bottom: 2%;
+	margin-right: 15%;
+	font-size: 250%;
+	border-bottom: 2px solid black;
+}
+
+.category-title-left {
+	text-align: left;
+	margin-bottom: 2%;
+	margin-left: 15%;
+	font-size: 250%;
+	border-bottom: 2px solid black;
+}
+
+.family-dinner-choice:hover {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: #e6e6e6;
+	border-radius: 15px;
+}
+
+.family-dinner-choice h2{
+		font-size: 150%;
+}
+
+.specials-container ul {
+	list-style: none;
+	list-style-type: none;
+	padding: 0;
+}
+
+@media (max-width: 992px){
+	.family-dinner-choice h2{
+		font-size: 175%;
+	}
+	.specials-container {
+		margin-bottom: 15%;
+	}
+	body h3{
+		font-size: 150%;	
+	}
+}

@@ -22,7 +22,45 @@
 	font-style: bold;
 }
 
+/* Catering */
+
+.catering {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 5%;
+}
+
+/* Delivery */
+
+.delivery {
+	text-align: center;
+	width: 100%;
+	padding-bottom: 5%;
+}
+
+.delivery ul{
+	padding: 0;
+	list-style-type: none;
+}
+
+.delivery-locations {
+	display: inline-block;
+	vertical-align: top;
+	padding: 2%;
+	width: 50%;
+	height: 150px;
+	margin: 0;
+}
+.delivery-hours {
+	font-size: 100%;
+}
+
+.hours {
+	font-size: 80%;
+}
+
 /* Location */
+
 .carousel-fade .carousel-inner .item {
 	opacity: 0;
 	-webkit-transition-property: opacity;
@@ -84,35 +122,6 @@
     filter:alpha(opacity=0); /* IE support */
 }
 
-/* Catering */
-
-.catering {
-	text-align: center;
-	padding-bottom: 5%;
-}
-
-/* Delivery */
-
-.delivery {
-	text-align: center;
-	width: 100%;
-	padding-bottom: 5%;
-}
-
-.delivery ul{
-	padding: 0;
-	list-style-type: none;
-}
-
-.delivery-locations {
-	display: inline-block;
-	vertical-align: top;
-	padding: 2%;
-	width: 50%;
-	height: 150px;
-	margin: 0;
-}
-
 /* Maps */
 
 .direction {
@@ -144,6 +153,7 @@
 	text-decoration: none;
 	color: black;
 }
+
 /* Menu */
 
 .menu {
@@ -169,6 +179,26 @@
 	padding: 0;
 }
 
+/* Policy */
+
+.policy {
+	text-align: center;
+	margin-bottom: 15%;
+}
+
+.policy ul{
+	list-style-type: none;
+}
+
+.policy h1{
+	text-align: left;
+	margin-bottom: 2%;
+	margin-left: 15%;
+	font-size: 250%;
+	border-bottom: 2px solid black;
+
+}
+
 /* Video */
 
 .video {
@@ -190,4 +220,14 @@
 	color: white;
 	font-weight: bold;
 	font-family: 'Arizonia', cursive;
+}
+
+
+@media (max-width: 992px){
+	body {
+		font-size: 120%;
+	}
+    .video-container p{
+        font-size: 150%;
+    }
 }
