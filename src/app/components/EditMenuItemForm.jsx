@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+import { Button } from 'react-bootstrap';
+
 import AuthService from '../components/AuthService.jsx';
 
 const Auth = new AuthService();
@@ -9,6 +11,7 @@ class EditMenuItemForm extends React.PureComponent {
 		super(props)
 		this.handleChange = this.handleChange.bind(this);
 		this.handleBlur = this.handleBlur.bind(this);
+		this.handleDelete = this.handleDelete.bind(this);
 		this.state = {
 			id: this.props.menu.id,
 			name: this.props.menu.name,
@@ -26,6 +29,7 @@ class EditMenuItemForm extends React.PureComponent {
 	};
 
 	handleBlur() {
+
         const headers = {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -34,8 +38,40 @@ class EditMenuItemForm extends React.PureComponent {
         if (Auth.loggedIn()) {
             headers['Authorization'] = 'Bearer ' + Auth.getToken()
         };
+
         const url = 'http://localhost:3001/api/v1/menus/' + this.state.id;
 		axios.put(
+			    url,
+			    { menu: 
+			    	{
+		    		name: this.state.name,
+	        		ingredients: this.state.ingredients,
+	        		price: this.state.price,
+	        		category: this.state.category
+	    			}
+			    }, 
+			    {headers}
+			    )
+			  .then(response => {
+				window.location = '/admin/edit';
+			  })
+			  .catch(error => console.log(error)
+		);
+	}
+
+	handleDelete() {
+
+        const headers = {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        };
+        
+        if (Auth.loggedIn()) {
+            headers['Authorization'] = 'Bearer ' + Auth.getToken()
+        };
+
+        const url = 'http://localhost:3001/api/v1/menus/' + this.state.id;
+		axios.delete(
 			    url,
 			    { menu: 
 			    	{
@@ -94,7 +130,15 @@ class EditMenuItemForm extends React.PureComponent {
 			            <option value="10">Rice</option>
 			            <option value="11">Noodles</option>
 		        	</select>
+					<input 
+						className='input' 
+						type="file"
+	        			name="picture"
+	        			value={this.state.picture}
+	        			onChange={this.handleChange}
+	        		/>
 				</form>
+				<Button onClick={this.handleDelete} bsStyle='danger'>Delete</Button>
 			</div>
 		)
 	}

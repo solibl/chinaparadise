@@ -37,7 +37,6 @@ class Navigation extends React.PureComponent {
 		          			<NavDropdown title='Admin' id="basic-nav-dropdown">
 		          				<MenuItem href='/admin'> Add New Menu Item </MenuItem>
 		          				<MenuItem href='/admin/edit'> Edit Menu Items</MenuItem>
-		          				<MenuItem> Change Password </MenuItem>
 		          				<MenuItem onClick={this.handleLogout} href='/login'> Logout </MenuItem>
 		          			</NavDropdown>
 		          		</Nav>

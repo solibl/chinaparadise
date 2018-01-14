@@ -50,6 +50,12 @@
 	border-radius: 15px;
 }
 
+.menu-item {
+	text-align: center;
+	width: 80%;
+	margin-left: 10%;
+}
+
 .menu-price {
 	margin: 0;
 	text-align: left;
