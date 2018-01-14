@@ -1,0 +1,234 @@
+/* About */
+
+.about {
+	margin-top: 1%;
+	margin-bottom: 5%;
+	width: 100%;
+}
+.about h1{
+	text-align: right;
+	margin-bottom: 2%;
+	margin-right: 15%;
+	font-size: 250%;
+	border-bottom: 2px solid black;
+}
+
+.about p{
+	text-align: center;
+	font-size: 125%;
+}
+
+.about span{
+	font-style: bold;
+}
+
+/* Catering */
+
+.catering {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 5%;
+}
+
+/* Delivery */
+
+.delivery {
+	text-align: center;
+	width: 100%;
+	padding-bottom: 5%;
+}
+
+.delivery ul{
+	padding: 0;
+	list-style-type: none;
+}
+
+.delivery-locations {
+	display: inline-block;
+	vertical-align: top;
+	padding: 2%;
+	width: 50%;
+	height: 150px;
+	margin: 0;
+}
+.delivery-hours {
+	font-size: 100%;
+}
+
+.hours {
+	font-size: 80%;
+}
+
+/* Location */
+
+.carousel-fade .carousel-inner .item {
+	opacity: 0;
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+
+.carousel {
+	max-height: 50%;
+}
+
+
+.carousel-container-text{
+	font-size: 250%;
+}
+
+.carousel-container-text ul{
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	font-size: 50%;
+}
+
+.carousel-indicators {
+   display: none;
+}
+
+
+.hours li{
+	font-size: 160%;
+}
+
+.item img{
+	max-height: 650px !important;
+	width: 100% !important;
+}
+
+.right.carousel-control, .left.carousel-control {
+    opacity: 0;
+    filter:alpha(opacity=0); /* IE support */
+}
+
+/* Maps */
+
+.direction {
+	position: absolute;
+	display: inline-block;
+	top: 80%;
+	right: 43.5%;
+	z-index: .5;
+	width: 200px;
+}
+
+.direction a{
+	display: block;
+	width: 200px;
+	height: 25px;
+	padding-right: 20px;
+	font-size: 125%;
+	text-decoration: none;
+}
+
+.map-container {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+.map-container a{
+	text-decoration: none;
+	color: black;
+}
+
+/* Menu */
+
+.menu {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.menu h1{
+	text-align: left;
+	margin-bottom: 2%;
+	margin-left: 15%;
+	font-size: 250%;
+	border-bottom: 2px solid black;
+
+}
+
+.menu p{
+	font-size: 125%;
+}
+
+.menu ul {
+	font-size: 125%;
+	padding: 0;
+}
+
+/* Policy */
+
+.policy {
+	text-align: center;
+	margin-bottom: 15%;
+}
+
+.policy ul{
+	padding: 0;
+	list-style-type: none;
+}
+
+.policy h1{
+	text-align: left;
+	margin-bottom: 2%;
+	margin-left: 15%;
+	font-size: 250%;
+	border-bottom: 2px solid black;
+
+}
+
+/* Video */
+
+.video {
+	opacity: 0.8;
+}
+
+.video-container {
+	position: relative;
+	display: inline-block;
+}
+
+.video-container p{
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	font-size: 300%;
+	color: white;
+	font-weight: bold;
+	font-family: 'Arizonia', cursive;
+}
+
+
+@media (max-width: 992px){
+	body {
+		font-size: 120%;
+	}
+    .video-container p{
+        font-size: 150%;
+    }
+}
