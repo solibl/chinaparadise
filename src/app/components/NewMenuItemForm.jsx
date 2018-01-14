@@ -106,6 +106,12 @@ class MenuForm extends React.PureComponent {
 			            <option value="10">Rice</option>
 			            <option value="11">Noodles</option>
 		        	</select>
+					<input 
+						className='input' 
+						type="file"
+	        			name="picture" 
+	        			onChange={this.handleChange}
+	        		/>
 					<input
 						className="form-submit"
 						value="Submit"

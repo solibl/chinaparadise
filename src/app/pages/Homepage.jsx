@@ -62,10 +62,10 @@ class Homepage extends React.PureComponent {
 									<ul className='hours'>
 										<li>Sunday - Thursday</li>
 										<li>11:30 AM to 3:00 PM</li>
-										<li>4:30 PM - 9:00 PM</li>
+										<li>4:00 PM - 9:00 PM</li>
 										<li>Friday - Saturday</li>
 										<li>11:30 AM to 3:00 PM</li>
-										<li>4:30 PM - 9:00 PM</li>									
+										<li>4:00 PM - 9:00 PM</li>									
 									</ul>
 								</ul>
 							</div>
@@ -123,7 +123,7 @@ class Homepage extends React.PureComponent {
 							<ul className='delivery-hours'>
 								<li>Hours We Deliver</li>
 								<li>11:30 AM to 3:00 PM</li>
-								<li>4:30 PM - 8:30 PM</li>								
+								<li>4:00 PM - 8:30 PM</li>								
 							</ul>
 							<ul>
 								<li>Alamo</li>
