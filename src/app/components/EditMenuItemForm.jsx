@@ -39,7 +39,7 @@ class EditMenuItemForm extends React.PureComponent {
             headers['Authorization'] = 'Bearer ' + Auth.getToken()
         };
 
-        const url = 'http://localhost:3001/api/v1/menus/' + this.state.id;
+        const url = 'https://china-paradise-api.herokuapp.com/api/v1/menus/' + this.state.id;
 		axios.put(
 			    url,
 			    { menu: 
@@ -70,7 +70,7 @@ class EditMenuItemForm extends React.PureComponent {
             headers['Authorization'] = 'Bearer ' + Auth.getToken()
         };
 
-        const url = 'http://localhost:3001/api/v1/menus/' + this.state.id;
+        const url = 'https://china-paradise-api.herokuapp.com/api/v1/menus/' + this.state.id;
 		axios.delete(
 			    url,
 			    { menu: 

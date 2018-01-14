@@ -44,7 +44,7 @@ class MenuForm extends React.PureComponent {
         };
 
 		axios.post(
-			    'http://localhost:3001/api/v1/menus',
+			    'https://china-paradise-api.herokuapp.com/api/v1/menus',
 			    { menu: 
 			    	{
 		    		name: this.state.name,

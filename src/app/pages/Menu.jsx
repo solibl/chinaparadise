@@ -19,7 +19,7 @@ class Menu extends React.PureComponent {
 	};
 
 	componentWillMount() {
-		axios.get('http://localhost:3001/api/v1/menus')
+		axios.get('https://china-paradise-api.herokuapp.com/api/v1/menus')
 		.then(response => {
 		  this.setState({
 		  	menu: response.data

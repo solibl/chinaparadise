@@ -1,7 +1,7 @@
 export default class AuthService {
     // Initializing important variables
     constructor(domain) {
-        this.domain = domain || 'http://localhost:3001/api/v1' // API server domain
+        this.domain = domain || 'https://china-paradise-api.herokuapp.com/api/v1' // API server domain
         this.fetch = this.fetch.bind(this) // React binding stuff
         this.login = this.login.bind(this)
     }
