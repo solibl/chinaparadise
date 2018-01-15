@@ -18,11 +18,7 @@ class EditMenuItemForm extends React.PureComponent {
 			ingredients: this.props.menu.ingredients,
 			price: this.props.menu.price,
 			category: this.props.menu.category,
-			if (this.state.picture === null) {
-				picture: null
-			}else {
-				picture: this.state.picture
-			};
+			picture: this.props.menu.picture
 		}
 	}
 	handleChange(e) {
