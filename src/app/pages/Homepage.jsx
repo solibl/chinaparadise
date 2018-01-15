@@ -32,9 +32,9 @@ class Homepage extends React.PureComponent {
 					<div className='menu'>
 						<h1><span id='Menu'></span> Menu </h1>
 						<p>Food is made by the order</p>
-						<p>Our food contains no MSG</p>
-						<p>We can accommodate based on dietery needs upon request such as:</p>
+						<p>Please inform your server of any food allergies or special dietary needs before ordering.</p>
 							<ul>
+								<li>Such as:</li>
 								<li>Low Oil</li>
 								<li>Low Sodium</li>
 								<li>Gluten Free</li>
@@ -158,6 +158,7 @@ class Homepage extends React.PureComponent {
 							<li>The order in question must be brought back with at least 80% of it's original content</li>
 						</ul>
 						<p>Prices and food menu are subject to change without notice.</p>
+						<p>We are not responsible for any food allergies</p>
 						<p>We do not accept checks</p>
 						<p>Corkage fee: $10.00 per bottle</p>
 					</div>
