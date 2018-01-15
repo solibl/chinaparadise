@@ -17,7 +17,8 @@ class EditMenuItemForm extends React.PureComponent {
 			name: this.props.menu.name,
 			ingredients: this.props.menu.ingredients,
 			price: this.props.menu.price,
-			category: this.props.menu.category
+			category: this.props.menu.category,
+			picture: this.state.picture
 		}
 	}
 	handleChange(e) {
@@ -47,7 +48,8 @@ class EditMenuItemForm extends React.PureComponent {
 		    		name: this.state.name,
 	        		ingredients: this.state.ingredients,
 	        		price: this.state.price,
-	        		category: this.state.category
+	        		category: this.state.category,
+	        		picture: this.state.picture
 	    			}
 			    }, 
 			    {headers}
@@ -78,7 +80,8 @@ class EditMenuItemForm extends React.PureComponent {
 		    		name: this.state.name,
 	        		ingredients: this.state.ingredients,
 	        		price: this.state.price,
-	        		category: this.state.category
+	        		category: this.state.category,
+	        		picture: this.state.picture
 	    			}
 			    }, 
 			    {headers}

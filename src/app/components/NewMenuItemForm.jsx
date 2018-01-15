@@ -50,7 +50,8 @@ class MenuForm extends React.PureComponent {
 		    		name: this.state.name,
 	        		ingredients: this.state.ingredients,
 	        		price: this.state.price,
-	        		category: this.state.category
+	        		category: this.state.category,
+	        		picture: this.state.picture
 	    			}
 			    }, 
 			    {headers}
