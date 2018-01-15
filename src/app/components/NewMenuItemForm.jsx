@@ -43,17 +43,6 @@ class MenuForm extends React.PureComponent {
             headers['Authorization'] = 'Bearer ' + Auth.getToken()
         };
 
-        let reader = new FileReader();
-
-        if (!this.state.picture === null){
-        	reader = reader.readAsDataUrl(this.state.picture);
-        	this.setState(
-        		{
-        			picture: reader.results
- 				}
-        	)
-        }
-
 		axios.post(
 			    'https://china-paradise-api.herokuapp.com/api/v1/menus',
 			    { menu: 
