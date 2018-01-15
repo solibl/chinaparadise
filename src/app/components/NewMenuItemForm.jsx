@@ -46,7 +46,7 @@ class MenuForm extends React.PureComponent {
         let reader = new FileReader();
 
         if (!this.state.picture === null){
-        	reader = readAsDataUrl(this.state.picture);
+        	reader = reader.readAsDataUrl(this.state.picture);
         	this.setState(
         		{
         			picture: reader.results
