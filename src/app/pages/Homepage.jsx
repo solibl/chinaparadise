@@ -65,7 +65,7 @@ class Homepage extends React.PureComponent {
 										<li>4:00 PM - 9:00 PM</li>
 										<li>Friday - Saturday</li>
 										<li>11:30 AM to 3:00 PM</li>
-										<li>4:00 PM - 9:00 PM</li>									
+										<li>4:00 PM - 9:30 PM</li>									
 									</ul>
 								</ul>
 							</div>
@@ -101,7 +101,7 @@ class Homepage extends React.PureComponent {
 										<li> </li>
 										<li>Friday - Saturday</li>
 										<li>11:30 AM to 3:00 PM</li>
-										<li>4:00 PM - 9:00 PM</li>									
+										<li>4:00 PM - 9:30 PM</li>									
 									</ul>
 								</ul>
 							</div>
