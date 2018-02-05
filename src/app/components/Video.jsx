@@ -4,7 +4,7 @@ class Video extends React.PureComponent {
     render () {
         return (
             <div>
-                <video className="video" playsinline autoPlay loop muted preload="auto" width="100%" height="50%" data-setup="{}">
+                <video className="video" playsInline autoPlay loop muted preload="auto" width="100%" height="50%" data-setup="{}">
                     <source src="https://s3-us-west-1.amazonaws.com/chinaparadise/China_Paradise.mp4" type='video/mp4'/>        
                 </video>
             </div>
