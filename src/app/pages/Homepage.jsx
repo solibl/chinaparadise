@@ -68,6 +68,10 @@ class Homepage extends React.PureComponent {
 										<li>4:00 PM - 9:30 PM</li>									
 									</ul>
 								</ul>
+								<ul>
+									<li>Last seating for dine-in & take out</li>
+									<li>is 15 minutes before closing</li>
+								</ul>
 							</div>
 							<div className="Map">
 								<div className="map-container">
@@ -103,6 +107,10 @@ class Homepage extends React.PureComponent {
 										<li>11:30 AM to 3:00 PM</li>
 										<li>4:00 PM - 9:30 PM</li>									
 									</ul>
+								</ul>
+								<ul>
+									<li>Last seating for dine-in & take out</li>
+									<li>is 15 minutes before closing</li>
 								</ul>
 							</div>
 							<div className="Map">
