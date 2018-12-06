@@ -19,10 +19,6 @@ class Homepage extends React.PureComponent {
 			<div>
 				<Navigation />
 				<div className="container" id="Main">
-					<div className="video-container">
-						<Video />
-						<p> Specializing in Szechwan and Hunan Cuisine</p>
-					</div>
 					<div className="about">					
 						<h1><span id='About'></span> About Us </h1>
 						<p> China Paradise Restaurant is a family	owned and operated restaurant established in Danville, CA since 1990. </p>
@@ -131,7 +127,7 @@ class Homepage extends React.PureComponent {
 							<ul className='delivery-hours'>
 								<li>Hours We Deliver</li>
 								<li>11:30 AM to 3:00 PM</li>
-								<li>4:00 PM - 8:30 PM</li>								
+								<li>4:00 PM - 8:00 PM</li>								
 							</ul>
 							<ul>
 								<li>Alamo</li>
@@ -145,7 +141,7 @@ class Homepage extends React.PureComponent {
 								<ul className='delivery-hours'>
 									<li>Hours We Deliver</li>
 									<li>11:30 AM to 3:00 PM</li>
-									<li>4:00 PM - 8:30 PM</li>
+									<li>4:00 PM - 8:00 PM</li>
 								</ul>
 								<ul>
 									<li>Dublin</li>
