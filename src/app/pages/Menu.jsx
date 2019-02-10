@@ -11,19 +11,20 @@ import LoadingImage from '../images/background/wokloadingscreen.gif';
 class Menu extends React.PureComponent {
 	
 	constructor(props) {
-  		super(props)
-  		this.state = {
-  			menu: undefined,
-  			loading: true
-  		}
+		super(props)
+		this.state = {
+			menu: undefined,
+			loading: true
+		}
 	};
 
 	componentWillMount() {
 		axios.get('https://china-paradise-api.herokuapp.com/api/v1/menus')
 		.then(response => {
-		  this.setState({
-		  	menu: response.data
-		  })
+			console.log(response)
+			this.setState({
+				menu: response.data
+			})
 		})
 		.catch(error => {
 			alert(error);
@@ -54,7 +55,7 @@ class Menu extends React.PureComponent {
 										<h3 className='menu-name'>{appetizer.name}</h3>
 										<p className='menu-ingredients'>{appetizer.ingredients}</p>
 									</Col>
-									<Col xs={6} md={4}>									
+									<Col xs={6} md={4}>                                 
 										<h4 className='menu-price'>{appetizer.price}</h4>
 									</Col>
 								</Row>
@@ -72,7 +73,7 @@ class Menu extends React.PureComponent {
 										<h3 className='menu-name'>{soup.name}</h3>
 										<p className='menu-ingredients'>{soup.ingredients}</p>
 									</Col>
-									<Col xs={6} md={4}>									
+									<Col xs={6} md={4}>                                 
 										<h4 className='menu-price'>{soup.price}</h4>
 									</Col>
 								</Row>
@@ -90,7 +91,7 @@ class Menu extends React.PureComponent {
 										<h3 className='menu-name'>{pork.name}</h3>
 										<p className='menu-ingredients'>{pork.ingredients}</p>
 									</Col>
-									<Col xs={6} md={4}>									
+									<Col xs={6} md={4}>                                 
 										<h4 className='menu-price'>{pork.price}</h4>
 									</Col>
 								</Row>
@@ -108,7 +109,7 @@ class Menu extends React.PureComponent {
 										<h3 className='menu-name'>{poultry.name}</h3>
 										<p className='menu-ingredients'>{poultry.ingredients}</p>
 									</Col>
-									<Col xs={6} md={4}>									
+									<Col xs={6} md={4}>                                 
 										<h4 className='menu-price'>{poultry.price}</h4>
 									</Col>
 								</Row>
@@ -126,7 +127,7 @@ class Menu extends React.PureComponent {
 										<h3 className='menu-name'>{beef.name}</h3>
 										<p className='menu-ingredients'>{beef.ingredients}</p>
 									</Col>
-									<Col xs={6} md={4}>									
+									<Col xs={6} md={4}>                                 
 										<h4 className='menu-price'>{beef.price}</h4>
 									</Col>
 								</Row>
@@ -144,7 +145,7 @@ class Menu extends React.PureComponent {
 										<h3 className='menu-name'>{seafood.name}</h3>
 										<p className='menu-ingredients'>{seafood.ingredients}</p>
 									</Col>
-									<Col xs={6} md={4}>									
+									<Col xs={6} md={4}>                                 
 										<h4 className='menu-price'>{seafood.price}</h4>
 									</Col>
 								</Row>
@@ -162,7 +163,7 @@ class Menu extends React.PureComponent {
 										<h3 className='menu-name'>{vegetable.name}</h3>
 										<p className='menu-ingredients'>{vegetable.ingredients}</p>
 									</Col>
-									<Col xs={6} md={4}>									
+									<Col xs={6} md={4}>                                 
 										<h4 className='menu-price'>{vegetable.price}</h4>
 									</Col>
 								</Row>
@@ -180,7 +181,7 @@ class Menu extends React.PureComponent {
 										<h3 className='menu-name'>{egg_fu_yung.name}</h3>
 										<p className='menu-ingredients'>{egg_fu_yung.ingredients}</p>
 									</Col>
-									<Col xs={6} md={4}>									
+									<Col xs={6} md={4}>                                 
 										<h4 className='menu-price'>{egg_fu_yung.price}</h4>
 									</Col>
 								</Row>
@@ -198,7 +199,7 @@ class Menu extends React.PureComponent {
 										<h3 className='menu-name'>{sizzling.name}</h3>
 										<p className='menu-ingredients'>{sizzling.ingredients}</p>
 									</Col>
-									<Col xs={6} md={4}>									
+									<Col xs={6} md={4}>                                 
 										<h4 className='menu-price'>{sizzling.price}</h4>
 									</Col>
 								</Row>
@@ -216,7 +217,7 @@ class Menu extends React.PureComponent {
 										<h3 className='menu-name'>{rice.name}</h3>
 										<p className='menu-ingredients'>{rice.ingredients}</p>
 									</Col>
-									<Col xs={6} md={4}>									
+									<Col xs={6} md={4}>                                 
 										<h4 className='menu-price'>{rice.price}</h4>
 									</Col>
 								</Row>
@@ -234,7 +235,7 @@ class Menu extends React.PureComponent {
 										<h3 className='menu-name'>{noodle.name}</h3>
 										<p className='menu-ingredients'>{noodle.ingredients}</p>
 									</Col>
-									<Col xs={6} md={4}>									
+									<Col xs={6} md={4}>                                 
 										<h4 className='menu-price'>{noodle.price}</h4>
 									</Col>
 								</Row>

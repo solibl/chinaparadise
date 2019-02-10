@@ -56,12 +56,9 @@ class Homepage extends React.PureComponent {
 									<li>(925) 736-1221</li>
 									<li style={{textDecoration:"underline"}}>Open Hours</li>
 									<ul className='hours'>
-										<li>Sunday - Thursday</li>
+										<li>Everyday</li>
 										<li>11:30 AM to 3:00 PM</li>
-										<li>4:00 PM - 9:00 PM</li>
-										<li>Friday - Saturday</li>
-										<li>11:30 AM to 3:00 PM</li>
-										<li>4:00 PM - 9:30 PM</li>									
+										<li>4:00 PM - 9:00 PM</li>									
 									</ul>
 								</ul>
 								<ul>
@@ -95,13 +92,9 @@ class Homepage extends React.PureComponent {
 									<li>(925) 556-9988</li>
 									<li style={{textDecoration:"underline"}}>Open Hours</li>					
 									<ul className='hours'>
-										<li>Sunday - Thursday</li>
+										<li>Everyday</li>
 										<li>11:30 AM to 3:00 PM</li>
-										<li>4:00 PM - 9:00 PM</li>
-										<li> </li>
-										<li>Friday - Saturday</li>
-										<li>11:30 AM to 3:00 PM</li>
-										<li>4:00 PM - 9:30 PM</li>									
+										<li>4:00 PM - 9:00 PM</li>								
 									</ul>
 								</ul>
 								<ul>
