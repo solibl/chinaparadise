@@ -45,6 +45,7 @@ class Menu extends React.PureComponent {
 			menuItems = 
 				<div className='menu-container'>
 					<h1 className='page-title'>Menu</h1>
+					<p>Disclaimer: China Paradise does not have any contracts with any 3rd party delivery services. If you would like delivery, please call us directly. We are not responsible for any 3rd party services for delivery.</p>
 					<div className='category-container'>
 						<h1 className='category-title-right'>Appetizers</h1>
 						<Grid>
