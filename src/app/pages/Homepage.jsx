@@ -117,6 +117,7 @@ class Homepage extends React.PureComponent {
 					<div className='delivery'>
 						<h1><span id='Delivery'></span> Delivery </h1>
 						<p> Each restaurant will be able to deliver to the listed areas </p>
+						<p><b>Disclaimer:</b> China Paradise does not have any contracts with any 3rd party delivery services. If you would like delivery, please call us directly. We are not responsible for any 3rd party services for delivery.</p>
 						<div className='delivery-locations'>
 						<h1> Blackhawk </h1>
 							<ul className='delivery-hours'>
