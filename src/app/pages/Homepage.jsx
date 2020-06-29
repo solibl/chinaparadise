@@ -24,8 +24,7 @@ class Homepage extends React.PureComponent {
 						<p> China Paradise Restaurant is a family	owned and operated restaurant established in Danville, CA since 1990. </p>
 						<p> Our goal is to serve delicious Chinese dishes and to provide you with a great dining experience! </p>
 						<p> It continues to be a pleasure serving you for <Founded /> years and counting!</p>
-						<h1>Disclaimer:</h1>
-						<p>China Paradise does not have any contracts with any 3rd party delivery services. If you would like delivery, please call us directly. We are not responsible for any 3rd party services for delivery.</p>
+						<p><b>Disclaimer:</b> China Paradise does not have any contracts with any 3rd party delivery services. If you would like delivery, please call us directly. We are not responsible for any 3rd party services for delivery.</p>
 
 					</div>
 					<div className='menu'>
