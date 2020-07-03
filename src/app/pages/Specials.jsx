@@ -81,7 +81,7 @@ class Specials extends React.PureComponent {
 									</div>
 									<div className='wrap-cell'>
 									<p>9.95</p>
-									<p>10.55</p>
+									<p>10.50</p>
 									<p>11.25</p>
 									</div>
 								</div>
