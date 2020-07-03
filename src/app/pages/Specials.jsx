@@ -151,19 +151,6 @@ class Specials extends React.PureComponent {
 									</div>
 								</div>
 								<div className='wrap'>
-									<h3>Snow Peas</h3>
-									<div className='wrap-column'>
-									<p>Chicken</p>
-									<p>Beef</p>
-									<p>Prawns</p>
-									</div>
-									<div className='wrap-cell'>
-									<p>9.95</p>
-									<p>10.50</p>
-									<p>11.25</p>
-									</div>
-								</div>
-								<div className='wrap'>
 									<h3>Mixed Vegetable Deluxe</h3>
 									<div className='wrap-column'>
 									<p>Chicken</p>
