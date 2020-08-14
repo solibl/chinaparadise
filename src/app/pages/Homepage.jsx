@@ -123,7 +123,7 @@ class Homepage extends React.PureComponent {
 						<h1> Blackhawk </h1>
 							<ul className='delivery-hours'>
 								<li>Hours We Deliver</li>
-								<li>11:30 AM to 3:00 PM</li>
+								<li>11:30 AM to 2:30 PM</li>
 								<li>4:00 PM - 8:00 PM</li>								
 							</ul>
 							<ul>
@@ -137,7 +137,7 @@ class Homepage extends React.PureComponent {
 							<h1> Dublin </h1>
 								<ul className='delivery-hours'>
 									<li>Hours We Deliver</li>
-									<li>11:30 AM to 3:00 PM</li>
+									<li>11:30 AM to 2:30 PM</li>
 									<li>4:00 PM - 8:00 PM</li>
 								</ul>
 								<ul>
