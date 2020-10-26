@@ -94,9 +94,13 @@ class Homepage extends React.PureComponent {
 									<li>(925) 556-9988</li>
 									<li style={{textDecoration:"underline"}}>Open Hours</li>					
 									<ul className='hours'>
+										<li>We will now be open for dine-in at 25% max capacity</li>
 										<li>Monday - Wednesday - Thursday - Friday - Saturday - Sunday</li>
 										<li>11:30 AM to 2:30 PM</li>
-										<li>4:00 PM - 8:00 PM</li>
+										<li>Monday - Wednesday - Thursday - Sunday</li>
+										<li>4:00 PM - 8:30 PM</li>
+										<li>Friday - Saturday</li>
+										<li>4:00 PM - 9:00 PM</li>
 										<li>We are temporarily closed every Tuesdays</li>								
 									</ul>
 								</ul>
