@@ -58,7 +58,6 @@ class Homepage extends React.PureComponent {
 									<li>(925) 736-1221</li>
 									<li style={{textDecoration:"underline"}}>Open Hours</li>
 									<ul className='hours'>
-										<li>We will be open on Thanksgiving!</li>
 										<li>Everyday</li>
 										<li>11:30 AM to 2:30 PM</li>
 										<li>4:00 PM - 8:00 PM</li>									
