@@ -58,9 +58,9 @@ class Homepage extends React.PureComponent {
 									<li>(925) 736-1221</li>
 									<li style={{textDecoration:"underline"}}>Open Hours</li>
 									<ul className='hours'>
-										<li>Everyday</li>
+										<li>Monday - Tuesday - Wednesday - Thursday - Friday - Saturday - Sunday</li>
 										<li>11:30 AM to 2:30 PM</li>
-										<li>4:00 PM - 8:00 PM</li>									
+										<li>4:00 PM - 8:30 PM</li>									
 									</ul>
 								</ul>
 								<ul>
@@ -94,11 +94,9 @@ class Homepage extends React.PureComponent {
 									<li>(925) 556-9988</li>
 									<li style={{textDecoration:"underline"}}>Open Hours</li>					
 									<ul className='hours'>
-										<li>Due to the Covid-19 Alameda County restrictions, we will be only taking takeout and delivery orders</li>
-										<li>Monday - Wednesday - Thursday - Friday - Saturday - Sunday</li>
+										<li>Monday - Tuesday - Wednesday - Thursday - Friday - Saturday - Sunday</li>
 										<li>11:30 AM to 2:30 PM</li>
-										<li>Monday - Wednesday - Thursday - Friday - Saturday - Sunday</li>
-										<li>4:00 PM - 8:00 PM</li>
+										<li>4:00 PM - 8:30 PM</li>
 										<li>We are temporarily closed every Tuesdays</li>								
 									</ul>
 								</ul>
