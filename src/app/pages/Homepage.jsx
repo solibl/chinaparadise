@@ -72,7 +72,7 @@ class Homepage extends React.PureComponent {
 								<div className="map-container">
 									<DanvilleMap/>
 									<Button className="direction">
-									          <a href="https://www.google.com/maps/dir/?api=1&destination=China+Paradise+Restaurant/@37.7514806,-121.9707949,12z">See Directions</a>
+									          <a href="https://www.google.com/maps/dir/?api=1&destination=China+Paradise+Restaurant/@37.7542598,-121.9439213,12.49z">See Directions</a>
 								    </Button>
 								</div>
 							</div>
@@ -97,7 +97,6 @@ class Homepage extends React.PureComponent {
 										<li>Monday - Tuesday - Wednesday - Thursday - Friday - Saturday - Sunday</li>
 										<li>11:30 AM to 2:30 PM</li>
 										<li>4:00 PM - 8:30 PM</li>
-										<li>We are temporarily closed every Tuesdays</li>								
 									</ul>
 								</ul>
 								<ul>
