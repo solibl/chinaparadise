@@ -122,7 +122,9 @@ class Homepage extends React.PureComponent {
 						<h1> Blackhawk </h1>
 							<ul className='delivery-hours'>
 								<li>Hours We Deliver</li>
+								<li>Friday - Saturday - Sunday</li>
 								<li>11:30 AM to 2:30 PM</li>
+								<li>Monday - Tuesday - Wednesday - Thursday - Friday - Saturday - Sunday</li>
 								<li>4:00 PM - 8:00 PM</li>								
 							</ul>
 							<ul>
