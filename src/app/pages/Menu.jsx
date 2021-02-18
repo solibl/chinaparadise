@@ -191,7 +191,7 @@ class Menu extends React.PureComponent {
 						</Grid>
 					</div>
 					<div className='category-container'>
-						<h1 className='category-title-right'>Sizzling Rice Platters</h1>
+						<h1 className='category-title-right'>Sizzling Iron Platters</h1>
 						<Grid>
 						{this.state.menu.sizzling.map((sizzling) => {
 							return(
