@@ -58,7 +58,7 @@ class Homepage extends React.PureComponent {
 									<li>(925) 736-1221</li>
 									<li style={{textDecoration:"underline"}}>Open Hours</li>
 									<ul className='hours'>
-										<li>Monday - Tuesday - Wednesday - Thursday - Friday - Saturday - Sunday</li>
+										<li>Everyday</li>
 										<li>11:30 AM to 2:30 PM</li>
 										<li>4:00 PM - 8:30 PM</li>									
 									</ul>
@@ -94,12 +94,13 @@ class Homepage extends React.PureComponent {
 									<li>(925) 556-9988</li>
 									<li style={{textDecoration:"underline"}}>Open Hours</li>					
 									<ul className='hours'>
-										<li>Monday - Tuesday - Wednesday - Thursday - Friday - Saturday - Sunday</li>
+										<li>Everyday</li>
 										<li>11:30 AM to 2:30 PM</li>
 										<li>4:00 PM - 8:30 PM</li>
 									</ul>
 								</ul>
 								<ul>
+									<li>We are now open for indoor dine-in service at 25% capacity.</li>
 									<li>Last seating for dine-in & take out</li>
 									<li>is 15 minutes before closing</li>
 								</ul>
@@ -124,7 +125,7 @@ class Homepage extends React.PureComponent {
 								<li>Hours We Deliver</li>
 								<li>Friday - Saturday - Sunday</li>
 								<li>11:30 AM to 2:30 PM</li>
-								<li>Monday - Tuesday - Wednesday - Thursday - Friday - Saturday - Sunday</li>
+								<li>Everyday</li>
 								<li>4:00 PM - 8:00 PM</li>								
 							</ul>
 							<ul>
@@ -138,6 +139,7 @@ class Homepage extends React.PureComponent {
 							<h1> Dublin </h1>
 								<ul className='delivery-hours'>
 									<li>Hours We Deliver</li>
+									<li>Everyday</li>
 									<li>11:30 AM to 2:30 PM</li>
 									<li>4:00 PM - 8:00 PM</li>
 								</ul>
