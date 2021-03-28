@@ -54,7 +54,7 @@ class Homepage extends React.PureComponent {
 								<ul>
 									<li><h1> Blackhawk </h1></li>
 									<li><h2>We will be closed from 4/5 to 4/8.</h2></li>
-									<li><h2>Sorry about the inconvencience!</h2></li>
+									<li><h2>Sorry about the inconvenience!</h2></li>
 									<li>3446 Camino Tassajara</li>
 									<li>Danville, CA 94506</li>
 									<li>(925) 736-1221</li>
@@ -92,7 +92,7 @@ class Homepage extends React.PureComponent {
 								<ul>
 									<li><h1> Dublin </h1></li>
 									<li><h2>We will be closed from 4/5 to 4/8.</h2></li>
-									<li><h2>Sorry about the inconvencience!</h2></li>
+									<li><h2>Sorry about the inconvenience!</h2></li>
 									<li>4580 Dublin Boulevard</li>
 									<li>Dublin, CA 94568</li>
 									<li>(925) 556-9988</li>
