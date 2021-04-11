@@ -20,7 +20,7 @@ class Specials extends React.PureComponent {
 								<p className='align-text-left'>Choice of Fried Rice: $2.00 Per Person</p>
 								<div className='family-dinner-choice'>
 									<h2> Mandarin Delight (A)</h2>
-									<p> $18.95 Per Person</p>
+									<p> $19.95 Per Person</p>
 									<ul>
 										<li> Eggrolls & Fried Wonton </li>
 										<li> Wonton Soup </li>
@@ -35,7 +35,7 @@ class Specials extends React.PureComponent {
 								</div>
 								<div className='family-dinner-choice'>
 									<h2> Szechwan Delight (B)</h2>
-									<p> $19.95 Per Person</p>
+									<p> $20.95 Per Person</p>
 									<ul>
 										<li> Fried Wonton & Foil Wrapped Chicken </li>
 										<li> Hot & Sour Soup </li>
@@ -50,7 +50,7 @@ class Specials extends React.PureComponent {
 								</div>
 								<div className='family-dinner-choice'>
 									<h2> China Paradise Delight (A)</h2>
-									<p> $22.95 Per Person</p>
+									<p> $23.95 Per Person</p>
 									<ul>
 										<li> Crab Puff & Fried Prawns </li>
 										<li> Seafood Soup </li>
