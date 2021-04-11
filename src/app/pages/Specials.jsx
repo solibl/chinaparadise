@@ -80,9 +80,9 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>9.95</p>
-									<p>10.50</p>
-									<p>11.25</p>
+									<p>10.95</p>
+									<p>11.50</p>
+									<p>12.25</p>
 									</div>
 								</div>
 								<div className='wrap'>
@@ -93,9 +93,9 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>9.95</p>
-									<p>10.50</p>
-									<p>11.25</p>
+									<p>10.95</p>
+									<p>11.50</p>
+									<p>12.25</p>
 									</div>
 								</div>
 								<div className='wrap'>
@@ -106,9 +106,9 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>9.95</p>
-									<p>10.50</p>
-									<p>11.25</p>
+									<p>10.95</p>
+									<p>11.50</p>
+									<p>12.25</p>
 									</div>
 								</div>
 								<div className='wrap'>
@@ -119,9 +119,9 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>9.95</p>
-									<p>10.50</p>
-									<p>11.25</p>
+									<p>10.95</p>
+									<p>11.50</p>
+									<p>12.25</p>
 									</div>
 								</div>
 								<div className='wrap'>
@@ -132,9 +132,9 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>9.95</p>
-									<p>10.50</p>
-									<p>11.25</p>
+									<p>10.95</p>
+									<p>11.50</p>
+									<p>12.25</p>
 									</div>
 								</div>
 								<div className='wrap'>
@@ -145,9 +145,9 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>9.95</p>
-									<p>10.50</p>
-									<p>11.25</p>
+									<p>10.95</p>
+									<p>11.50</p>
+									<p>12.25</p>
 									</div>
 								</div>
 								<div className='wrap'>
@@ -158,9 +158,9 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>9.95</p>
-									<p>10.50</p>
-									<p>11.25</p>
+									<p>10.95</p>
+									<p>11.50</p>
+									<p>12.25</p>
 									</div>
 								</div>
 								<div className='wrap'>
@@ -171,9 +171,9 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>9.95</p>
-									<p>10.50</p>
-									<p>11.25</p>
+									<p>10.95</p>
+									<p>11.50</p>
+									<p>12.25</p>
 									</div>
 								</div>
 								<div className='wrap'>
@@ -184,9 +184,9 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>9.95</p>
-									<p>10.50</p>
-									<p>11.25</p>
+									<p>10.95</p>
+									<p>11.50</p>
+									<p>12.25</p>
 									</div>
 								</div>
 								<div className='wrap'>
@@ -197,42 +197,46 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>9.95</p>
-									<p>10.50</p>
-									<p>11.25</p>
+									<p>10.95</p>
+									<p>11.50</p>
+									<p>12.25</p>
 									</div>
 								</div>
 								<div className='lunch-special-item'>
 									<h3> Walnut Prawns </h3>
-									<p> 12.95 </p>
+									<p> 13.95 </p>
 								</div>
 								<div className='lunch-special-item'>
 									<h3> Lemon Chicken </h3>
-									<p> 12.25 </p>
+									<p> 13.25 </p>
 								</div>
 								<div className='lunch-special-item'>
 									<h3> Princess Chicken </h3>
-									<p> 12.25 </p>
+									<p> 13.25 </p>
 								</div>
 								<div className='lunch-special-item'>
 									<h3> Sweet & Sour Pork </h3>
-									<p> 12.50 </p>
+									<p> 12.95 </p>
 								</div>
 								<div className='lunch-special-item'>
 									<h3> Green Bean with Chicken or Beef </h3>
-									<p> 12.25 </p>
+									<p> 13.25 </p>
 								</div>
 								<div className='lunch-special-item'>
 									<h3> Asparagus with Chicken or Beef </h3>
-									<p> 12.25 </p>
+									<p> 13.25 </p>
 								</div>
 								<div className='lunch-special-item'>
 									<h3> Hot Spicy Eggplant </h3>
-									<p> 12.50 </p>
+									<p> 12.95 </p>
 								</div>
 								<div className='lunch-special-item'>
 									<h3> Szechwan Bean Cake </h3>
-									<p> 10.75 </p>
+									<p> 11.25 </p>
+								</div>
+								<div className='lunch-special-item'>
+									<h3> Orange Chicken </h3>
+									<p> 13.25 </p>
 								</div>
 							</div>
 						</div>
