@@ -64,6 +64,7 @@ class Homepage extends React.PureComponent {
 									</ul>
 								</ul>
 								<ul>
+									<li>We are now open for indoor dine-in service at 50% capacity.</li>
 									<li>Last seating for dine-in & take out</li>
 									<li>is 15 minutes before closing</li>
 								</ul>
@@ -100,7 +101,7 @@ class Homepage extends React.PureComponent {
 									</ul>
 								</ul>
 								<ul>
-									<li>We are now open for indoor dine-in service at 25% capacity.</li>
+									<li>We are now open for indoor dine-in service at 50% capacity.</li>
 									<li>Last seating for dine-in & take out</li>
 									<li>is 15 minutes before closing</li>
 								</ul>
