@@ -80,8 +80,8 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>10.95</p>
 									<p>11.50</p>
+									<p>11.95</p>
 									<p>12.25</p>
 									</div>
 								</div>
@@ -93,8 +93,8 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>10.95</p>
 									<p>11.50</p>
+									<p>11.95</p>
 									<p>12.25</p>
 									</div>
 								</div>
@@ -106,8 +106,8 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>10.95</p>
 									<p>11.50</p>
+									<p>11.95</p>
 									<p>12.25</p>
 									</div>
 								</div>
@@ -119,8 +119,8 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>10.95</p>
 									<p>11.50</p>
+									<p>11.95</p>
 									<p>12.25</p>
 									</div>
 								</div>
@@ -132,8 +132,8 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>10.95</p>
 									<p>11.50</p>
+									<p>11.95</p>
 									<p>12.25</p>
 									</div>
 								</div>
@@ -145,8 +145,8 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>10.95</p>
 									<p>11.50</p>
+									<p>11.95</p>
 									<p>12.25</p>
 									</div>
 								</div>
@@ -158,8 +158,8 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>10.95</p>
 									<p>11.50</p>
+									<p>11.95</p>
 									<p>12.25</p>
 									</div>
 								</div>
@@ -171,8 +171,8 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>10.95</p>
 									<p>11.50</p>
+									<p>11.95</p>
 									<p>12.25</p>
 									</div>
 								</div>
@@ -184,8 +184,8 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>10.95</p>
 									<p>11.50</p>
+									<p>11.95</p>
 									<p>12.25</p>
 									</div>
 								</div>
@@ -197,8 +197,8 @@ class Specials extends React.PureComponent {
 									<p>Prawns</p>
 									</div>
 									<div className='wrap-cell'>
-									<p>10.95</p>
 									<p>11.50</p>
+									<p>11.95</p>
 									<p>12.25</p>
 									</div>
 								</div>
