@@ -22,7 +22,6 @@ class Navigation extends React.PureComponent {
 		          			</NavDropdown>
 		          			<NavDropdown title='Locations' id="basic-nav-dropdown">
 		          				<MenuItem href='/#Blackhawk'> Blackhawk </MenuItem>
-		          				<MenuItem href='/#Dublin'> Dublin </MenuItem>
 		          			</NavDropdown>
 		          			<NavItem href='/#Delivery'> Delivery </NavItem>
 		          			<NavItem href='/#Catering'> Catering </NavItem>

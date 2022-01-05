@@ -3,8 +3,8 @@ import { Carousel, Button } from 'react-bootstrap'
 
 import './Homepage.css';
 import Navigation from '../components/Navigation.jsx';
-import Video from '../components/Video.jsx';
 import DanvilleMap from '../components/Danville_Map.jsx';
+import DublinMap from '../components/Dublin_Map.jsx';
 import DanvilleOutside from '../images/restaurant/Danville_Restaurant.jpg';
 import DanvilleInside from '../images/restaurant/Danville_Inside.jpg';
 import Founded from '../components/Founded.jsx';
@@ -74,12 +74,12 @@ class Homepage extends React.PureComponent {
 								    </Button>
 								</div>
 							</div>
-						</div>
-						<div className='carousel-container' id='Dublin'>
-							<div className="carousel-container-text">
-							</div>
-							<div className="Map">
+							<div className="Map" id="Dublin">
 								<div className="map-container">
+									<DublinMap/>
+									<Button className="direction">
+									          <a href="https://www.google.com/maps/dir/?api=1&destination=China+Paradise+Restaurant+Dublin/@37.7052134,-121.8817382,12z">See Directions</a>
+								    </Button>
 								</div>
 							</div>
 						</div>
@@ -103,8 +103,6 @@ class Homepage extends React.PureComponent {
 								<li>Danville</li>
 								<li>San Ramon</li>
 							</ul>
-						</div>
-							<div className='delivery-locations'>
 						</div>
 					</div>
 					<div className='catering'>
