@@ -78,43 +78,6 @@ class Homepage extends React.PureComponent {
 								</div>
 							</div>
 						</div>
-						<div className='carousel-container' id='Dublin'>
-							<Carousel className='carousel-fade' pauseOnHover={false}>
-							    <Carousel.Item>
-							    	<img src={DublinOutside} alt='Dublin Restaurant'/>
-							    </Carousel.Item>
-							    <Carousel.Item>
-							    	<img src={DublinInside} alt='Inside Dublin Restaurant'/>
-							    </Carousel.Item>
-							</Carousel>
-							<div className="carousel-container-text">
-								<ul>
-									<li><h1> Dublin </h1></li>
-									<li>4580 Dublin Boulevard</li>
-									<li>Dublin, CA 94568</li>
-									<li>(925) 556-9988</li>
-									<li style={{textDecoration:"underline"}}>Open Hours</li>					
-									<ul className='hours'>
-										<li>Everyday</li>
-										<li>11:30 AM to 2:30 PM</li>
-										<li>4:00 PM - 8:30 PM</li>
-									</ul>
-								</ul>
-								<ul>
-									<li>We are now open for indoor dine-in service at 50% capacity.</li>
-									<li>Last seating for dine-in & take out</li>
-									<li>is 15 minutes before closing</li>
-								</ul>
-							</div>
-							<div className="Map">
-								<div className="map-container">
-									<DublinMap/>
-									<Button className="direction">
-									          <a href="https://www.google.com/maps/dir/?api=1&destination=China+Paradise+Restaurant+Dublin/@37.7052134,-121.8817382,12z">See Directions</a>
-								    </Button>
-								</div>
-							</div>
-						</div>
 					</div>
 					<div className='delivery'>
 						<h1><span id='Delivery'></span> Delivery </h1>
@@ -135,19 +98,6 @@ class Homepage extends React.PureComponent {
 								<li>Danville</li>
 								<li>San Ramon</li>
 							</ul>
-						</div>
-							<div className='delivery-locations'>
-							<h1> Dublin </h1>
-								<ul className='delivery-hours'>
-									<li>Hours We Deliver</li>
-									<li>Everyday</li>
-									<li>11:30 AM to 2:30 PM</li>
-									<li>4:00 PM - 8:00 PM</li>
-								</ul>
-								<ul>
-									<li>Dublin</li>
-									<li>Pleasanton</li>
-								</ul>
 						</div>
 					</div>
 					<div className='catering'>
