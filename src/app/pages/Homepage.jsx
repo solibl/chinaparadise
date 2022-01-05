@@ -7,9 +7,6 @@ import Video from '../components/Video.jsx';
 import DanvilleMap from '../components/Danville_Map.jsx';
 import DanvilleOutside from '../images/restaurant/Danville_Restaurant.jpg';
 import DanvilleInside from '../images/restaurant/Danville_Inside.jpg';
-import DublinOutside from '../images/restaurant/Dublin_Restaurant.jpg';
-import DublinInside from '../images/restaurant/Dublin_Inside.jpg';
-import DublinMap from '../components/Dublin_Map.jsx';
 import Founded from '../components/Founded.jsx';
 import Footer from '../components/Footer.jsx';
 
@@ -78,6 +75,14 @@ class Homepage extends React.PureComponent {
 								</div>
 							</div>
 						</div>
+						<div className='carousel-container' id='Dublin'>
+							<div className="carousel-container-text">
+							</div>
+							<div className="Map">
+								<div className="map-container">
+								</div>
+							</div>
+						</div>
 					</div>
 					<div className='delivery'>
 						<h1><span id='Delivery'></span> Delivery </h1>
@@ -98,6 +103,8 @@ class Homepage extends React.PureComponent {
 								<li>Danville</li>
 								<li>San Ramon</li>
 							</ul>
+						</div>
+							<div className='delivery-locations'>
 						</div>
 					</div>
 					<div className='catering'>
