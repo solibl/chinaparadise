@@ -120,7 +120,7 @@ class Homepage extends React.PureComponent {
 						<p>Prices and food menu are subject to change without notice.</p>
 						<p>We are not responsible for any food allergies</p>
 						<p>We do not accept checks</p>
-						<p>Corkage fee: $10.00 per bottle</p>
+						<p>Corkage fee: $15.00 per bottle</p>
 					</div>
 				</div>
 				<Footer />
