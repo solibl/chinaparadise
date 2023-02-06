@@ -7,6 +7,7 @@ import './Menu.css';
 import Navigation from '../components/Navigation.jsx';
 import Footer from '../components/Footer.jsx';
 import LoadingImage from '../images/background/wokloadingscreen.gif';
+import Menu from '../images/restaurant/menu.pdf';
 
 class Menu extends React.PureComponent {
 	
@@ -46,6 +47,7 @@ class Menu extends React.PureComponent {
 				<div className='menu-container'>
 					<h1 className='page-title'>Menu</h1>
 					<p><b>Disclaimer:</b> China Paradise does not have any contracts with any 3rd party delivery services. If you would like delivery, please call us directly. We are not responsible for any 3rd party services for delivery.</p>
+					<a href = {Menu} target = "_blank">Download Menu(Last Updated 2/6/2023)</a>
 					<div className='category-container'>
 						<h1 className='category-title-right'>Appetizers</h1>
 						<Grid>
@@ -57,7 +59,6 @@ class Menu extends React.PureComponent {
 										<p className='menu-ingredients'>{appetizer.ingredients}</p>
 									</Col>
 									<Col xs={6} md={4}>                                 
-										<h4 className='menu-price'>{appetizer.price}</h4>
 									</Col>
 								</Row>
 							)
@@ -75,7 +76,6 @@ class Menu extends React.PureComponent {
 										<p className='menu-ingredients'>{soup.ingredients}</p>
 									</Col>
 									<Col xs={6} md={4}>                                 
-										<h4 className='menu-price'>{soup.price}</h4>
 									</Col>
 								</Row>
 							)
@@ -93,7 +93,6 @@ class Menu extends React.PureComponent {
 										<p className='menu-ingredients'>{pork.ingredients}</p>
 									</Col>
 									<Col xs={6} md={4}>                                 
-										<h4 className='menu-price'>{pork.price}</h4>
 									</Col>
 								</Row>
 							)
@@ -111,7 +110,6 @@ class Menu extends React.PureComponent {
 										<p className='menu-ingredients'>{poultry.ingredients}</p>
 									</Col>
 									<Col xs={6} md={4}>                                 
-										<h4 className='menu-price'>{poultry.price}</h4>
 									</Col>
 								</Row>
 							)
@@ -129,7 +127,6 @@ class Menu extends React.PureComponent {
 										<p className='menu-ingredients'>{beef.ingredients}</p>
 									</Col>
 									<Col xs={6} md={4}>                                 
-										<h4 className='menu-price'>{beef.price}</h4>
 									</Col>
 								</Row>
 							)
@@ -147,7 +144,6 @@ class Menu extends React.PureComponent {
 										<p className='menu-ingredients'>{seafood.ingredients}</p>
 									</Col>
 									<Col xs={6} md={4}>                                 
-										<h4 className='menu-price'>{seafood.price}</h4>
 									</Col>
 								</Row>
 							)
@@ -165,7 +161,6 @@ class Menu extends React.PureComponent {
 										<p className='menu-ingredients'>{vegetable.ingredients}</p>
 									</Col>
 									<Col xs={6} md={4}>                                 
-										<h4 className='menu-price'>{vegetable.price}</h4>
 									</Col>
 								</Row>
 							)
@@ -183,7 +178,6 @@ class Menu extends React.PureComponent {
 										<p className='menu-ingredients'>{egg_fu_yung.ingredients}</p>
 									</Col>
 									<Col xs={6} md={4}>                                 
-										<h4 className='menu-price'>{egg_fu_yung.price}</h4>
 									</Col>
 								</Row>
 							)
@@ -201,7 +195,6 @@ class Menu extends React.PureComponent {
 										<p className='menu-ingredients'>{sizzling.ingredients}</p>
 									</Col>
 									<Col xs={6} md={4}>                                 
-										<h4 className='menu-price'>{sizzling.price}</h4>
 									</Col>
 								</Row>
 							)
@@ -219,7 +212,6 @@ class Menu extends React.PureComponent {
 										<p className='menu-ingredients'>{rice.ingredients}</p>
 									</Col>
 									<Col xs={6} md={4}>                                 
-										<h4 className='menu-price'>{rice.price}</h4>
 									</Col>
 								</Row>
 							)
@@ -237,7 +229,6 @@ class Menu extends React.PureComponent {
 										<p className='menu-ingredients'>{noodle.ingredients}</p>
 									</Col>
 									<Col xs={6} md={4}>                                 
-										<h4 className='menu-price'>{noodle.price}</h4>
 									</Col>
 								</Row>
 							)
