@@ -70,8 +70,8 @@ class Specials extends React.PureComponent {
 								<p className='align-text-right'>11:30 AM to 3:00 PM</p>
 								<p className='align-text-right'>Served with Appetizer & Soup of the Day </p>
 								<p className='align-text-right'>Choice of Fried Rice or Steamed Rice</p>
-								<p className='align-text-right'>Substitution for Chow Mein: $1.00</p>
-								<p className='align-text-right'>Substitution for Brown Rice: $0.50</p>
+								<p className='align-text-right'>Substitution for chow mein may incur an additional cost.</p>
+								<p className='align-text-right'>Substitution for brown rice may incur an additional cost.</p>
 								<div className='wrap'>
 									<h3>Szechwan</h3>
 									<div className='wrap-column'>
