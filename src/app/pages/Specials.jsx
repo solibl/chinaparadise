@@ -4,7 +4,7 @@ import './Specials.css'
 
 import Navigation from '../components/Navigation.jsx';
 import Footer from '../components/Footer.jsx';
-import Menu from '../images/restaurant/menu.pdf';
+import PDFMenu from '../images/restaurant/menu.pdf';
 
 
 class Specials extends React.PureComponent {
@@ -15,7 +15,7 @@ class Specials extends React.PureComponent {
 					<div id='Main'>
 						<div className='specials-container'>
 							<h1 className='page-title'>Specials</h1>
-							<a href = {Menu} target = "_blank">Download Menu(Last Updated 2/6/2023)</a>
+							<a href = {PDFMenu} target = "_blank">Download Menu(Last Updated 2/6/2023)</a>
 							<div className='family-dinner-container'>
 								<h1 className='category-title-left'>Family Dinner </h1>
 								<p className='align-text-left'>Served for Party of Two or More</p>

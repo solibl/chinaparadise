@@ -7,7 +7,7 @@ import './Menu.css';
 import Navigation from '../components/Navigation.jsx';
 import Footer from '../components/Footer.jsx';
 import LoadingImage from '../images/background/wokloadingscreen.gif';
-import Menu from '../images/restaurant/menu.pdf';
+import PDFMenu from '../images/restaurant/menu.pdf';
 
 class Menu extends React.PureComponent {
 	
@@ -47,7 +47,7 @@ class Menu extends React.PureComponent {
 				<div className='menu-container'>
 					<h1 className='page-title'>Menu</h1>
 					<p><b>Disclaimer:</b> China Paradise does not have any contracts with any 3rd party delivery services. If you would like delivery, please call us directly. We are not responsible for any 3rd party services for delivery.</p>
-					<a href = {Menu} target = "_blank">Download Menu(Last Updated 2/6/2023)</a>
+					<a href = {PDFMenu} target = "_blank">Download Menu(Last Updated 2/6/2023)</a>
 					<div className='category-container'>
 						<h1 className='category-title-right'>Appetizers</h1>
 						<Grid>
