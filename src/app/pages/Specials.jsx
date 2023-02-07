@@ -19,8 +19,8 @@ class Specials extends React.PureComponent {
 							<div className='family-dinner-container'>
 								<h1 className='category-title-left'>Family Dinner </h1>
 								<p className='align-text-left'>Served for Party of Two or More</p>
-								<p className='align-text-left'>Substitution on an Item: $3.00</p>
-								<p className='align-text-left'>Choice of Fried Rice: $2.00 Per Person</p>
+								<p className='align-text-left'>Substitution on an item may incur an additional cost.</p>
+								<p className='align-text-left'>Choice of may incur an additional cost.</p>
 								<div className='family-dinner-choice'>
 									<h2> Mandarin Delight (A)</h2>
 									<ul>
