@@ -47,7 +47,7 @@ class Menu extends React.PureComponent {
 				<div className='menu-container'>
 					<h1 className='page-title'>Menu</h1>
 					<p><b>Disclaimer:</b> China Paradise does not have any contracts with any 3rd party delivery services. If you would like delivery, please call us directly. We are not responsible for any 3rd party services for delivery.</p>
-					<a href = {PDFMenu} target = "_blank">Download Menu(Last Updated 6/2/2023)</a>
+					<a href = {PDFMenu} target = "_blank">Download Menu(Last Updated 7/22/2025)</a>
 					<div className='category-container'>
 						<h1 className='category-title-right'>Appetizers</h1>
 						<Grid>
